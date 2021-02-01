@@ -28,9 +28,13 @@ Home Page for Keio SFC's Moonshot Project.
 3.   **Writing Posts**
 
     Posts can be added using Netlify CMS
+    
+    
+4.  ** Contact Forms **
+    https://www.gatsbyjs.com/docs/building-a-contact-form/#run-your-own-server
 
 
-4.  **Learn more**
+5.  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
