@@ -1,29 +1,68 @@
 import React from "react";
 import { Link } from "gatsby";
-import headerStyles from "../styles/header.module.scss";
-import Img from "gatsby-image";
-import { useStaticQuery, graphql } from "gatsby";
-
-const CONTACT_FORM_URL = "";
+import headerStyles from "../styles/layout/header.module.scss";
 
 const Header = (props) => {
- 
-
   return (
-    <div className={colorClass}>
+    <div>
       <nav className={headerStyles.nav}>
+        <h1 className={headerStyles.siteTitle}>
+          MS MUSIC
+        </h1>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.listItem}>
-            <strong>S1</strong>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/about"
+            >
+              About
+            </Link>
           </li>
           <li className={headerStyles.listItem}>
-            <strong>S2</strong>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/mission"
+            >
+              Mission
+            </Link>
           </li>
           <li className={headerStyles.listItem}>
-            <strong>S3</strong>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/news"
+            >
+              News
+            </Link>
           </li>
           <li className={headerStyles.listItem}>
-            <strong>S4</strong>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/events"
+            >
+              Events
+            </Link>
+          </li>
+          <li className={headerStyles.listItem}>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/contact"
+            >
+              contact
+            </Link>
+          </li>
+          <li className={headerStyles.listItem}>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/team"
+            >
+              Team
+            </Link>
           </li>
         </ul>
       </nav>

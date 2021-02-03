@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "gatsby";
-import footerStyles from "../styles/footer.module.scss";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import footerStyles from "../styles/layout/footer.module.scss";
 
 const Footer = () => {
   return (
     <footer>
-      <h2>Footer</h2>
+      <div className={footerStyles.container}>
+        <small className={footerStyles.copyright}>&copy; 2021, Keio University Shonan Fujisawa Campus.</small>
+      </div>
     </footer>
   );
 };

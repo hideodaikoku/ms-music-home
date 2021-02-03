@@ -1,16 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: "ms-music",
+    title: "MS Moonshot",
+    titleTemplate: "%s | Music in 2050",
+    description:
+      "Temporary Description",
+    url: "https://ms-music.tokyo", // No trailing slash allowed!
+    image: "/images/sample.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@nNeuroMusicLab",
+    author: "Hideo Daikoku", 
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "",
+    //   },
+    // },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -19,6 +26,13 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images`,
       },
     },
     "gatsby-transformer-remark",

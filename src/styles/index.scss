@@ -1,6 +1,7 @@
-$background : #f6f6f6;
+$background : #2C2F33;
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -234,7 +235,7 @@ html {
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: Michroma, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
