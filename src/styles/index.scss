@@ -1,7 +1,13 @@
 $background : #2C2F33;
+$white : #FCFBFE;
+$purple : #7649fe;
+$dark : #5344A9;
+$orange: #F47F6B;
+$pink : #BB5098;
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -235,11 +241,12 @@ html {
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: Michroma, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: Ancho-Thin, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
+    color: white;
     line-height: 1.1;
     animation: fadein ease-in 1s;
   }
@@ -253,9 +260,10 @@ html {
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: Ancho-Thin, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
+    color: white;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
     line-height: 1.1;

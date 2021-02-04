@@ -6,26 +6,26 @@ const Header = (props) => {
   return (
     <div>
       <nav className={headerStyles.nav}>
-        <h1 className={headerStyles.siteTitle}>
-          MS MUSIC
-        </h1>
+        <Link className={headerStyles.siteTitle} to="/">
+          <h1 className={headerStyles.title}>MSMUSIC</h1>
+        </Link>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.listItem}>
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/about"
+              to="/"
             >
-              About
+              企画概要
             </Link>
           </li>
           <li className={headerStyles.listItem}>
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/mission"
+              to="/vision"
             >
-              Mission
+              ミッション
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -34,7 +34,7 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/news"
             >
-              News
+              ニュース
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -43,17 +43,18 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/events"
             >
-              Events
+              イベント
             </Link>
           </li>
           <li className={headerStyles.listItem}>
-            <Link
+            <a
               className={headerStyles.link}
-              activeClassName={headerStyles.activeNavItem}
-              to="/contact"
+              href="https://fveorefean7.typeform.com/to/u5rQJKq9"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              contact
-            </Link>
+              お問い合わせ
+            </a>
           </li>
           <li className={headerStyles.listItem}>
             <Link
@@ -61,7 +62,7 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/team"
             >
-              Team
+              メンバー
             </Link>
           </li>
         </ul>

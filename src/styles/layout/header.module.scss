@@ -1,33 +1,71 @@
 @use '../index' as *;
 
-.nav{
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $background;
+  -webkit-box-shadow: 1px 12px 28px -7px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 1px 12px 28px -7px rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 12px 28px -7px rgba(255, 255, 255, 0.75);
+  .site-title {
+    margin: .5rem auto;
+    padding: .5rem;
+    text-decoration: none;
+    h1{
+      color: $white;
+      font-weight: 100;
+      margin-bottom: 0;
+      font-size: 1.6rem;
+    }
+  }
+  .nav-list {
+    margin: .5rem .1rem 1rem 1rem;
+    justify-content: space-around;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: $background;
-    .site-title{
-        margin: 1rem auto;
-        padding:1rem;
+    flex-direction: row;
+    list-style-type: none;
+    .list-item {
+      margin: 0;
+      .link {
+        margin: 0;
+        padding: 0.2rem 0.3rem;
+        color: rgba(255, 255, 255, 0.438);
+        line-height: 1rem;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+      }
+      .active-nav-item{
         color: white;
+        font-weight: 300;
+      }
     }
-    .nav-list{
-        margin: 1rem;
-        justify-content: space-around;
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        .list-item{
-            margin: 0;
-            .link{
-                margin: 0;
-                padding: .2rem .3rem;
-                color: white;
-                line-height: 1rem;
-                text-decoration: none;
-                font-weight: 100;
-                font-size: .7rem;
-                text-transform: uppercase;
-            }
+  }
+}
+
+@media only screen and (min-width: 808px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .site-title {
+      margin: 0 auto 0 0;
+      padding: .5rem;
+      h1{
+        margin: 0;
+        padding: .2rem;
+      }
+    }
+    .nav-list {
+    margin: 0;
+      .list-item {
+        .link {
+          font-size: .8rem;
+            padding: 0.2rem 0.8rem;
         }
+      }
     }
+  }
 }

@@ -53,5 +53,14 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Ancho-Thin"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
   ],
 };

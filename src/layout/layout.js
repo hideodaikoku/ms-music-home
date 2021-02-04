@@ -5,22 +5,13 @@ import "../styles/index.scss";
 import layoutStyles from "../styles/layout/layout.module.scss";
 
 const Layout = (props) => {
-  let colorClass = layoutStyles.container;
-  switch (props.color) {
-    case "white":
-      colorClass = layoutStyles.containerWhite;
-      break;
-    case "placelist":
-      colorClass = layoutStyles.containerPlacelist;
-      break;
-    default:
-      break;
-  }
 
   return (
-    <div className={colorClass}>
-      <Header color={props.color} />
-      <div className={layoutStyles.content}>{props.children}</div>
+    <div className={layoutStyles.container}>
+      <Header/>
+      <div className={layoutStyles.content}>
+        {props.children}
+      </div>
       <div className={layoutStyles.footerContainer}>
         <Footer />
       </div>
