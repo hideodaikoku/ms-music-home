@@ -7,19 +7,12 @@ module.exports = {
     description:
       "Temporary Description",
     url: "https://ms-music.tokyo", // No trailing slash allowed!
-    image: "/images/sample.jpg", // Path to your image you placed in the 'static' folder
+    image: "/images/moonshot-logo.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@nNeuroMusicLab",
     author: "Hideo Daikoku", 
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass",
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "",
-    //   },
-    // },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-offline",
@@ -53,15 +46,6 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["Ancho-Thin"],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
     },
     {
       resolve: "gatsby-plugin-web-font-loader",
