@@ -3,6 +3,7 @@ $purple : #7649fe;
 $dark : #5344A9;
 $orange: #F47F6B;
 $pink : #BB5098;
+$black : #2C2F33;
 
 .container{
     .topTitle{
@@ -12,8 +13,8 @@ $pink : #BB5098;
         margin-bottom: 5rem;
         .vision{
             text-transform: uppercase;
-            color: $white;
-            font-family: 'Ancho-Thin';
+            color: $black;
+            font-family: 'Futura';
             text-align: center;
             font-size: 5rem;
         }
@@ -23,7 +24,7 @@ $pink : #BB5098;
         padding: 0 2rem;
         text-align: center;
         p{
-            color: $white;
+            color: $black;
             font-weight: 100;
             font-family: 'Noto Serif JP';
         }
@@ -32,19 +33,11 @@ $pink : #BB5098;
         margin: 2rem auto 0 auto;
         text-align: center;
         p{
-            color: $white;
+            color: $black;
             font-weight: 100;
             font-family: 'Roboto';
         }
     }
-
-    .planet{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%) rotate(180deg);
-        max-width: 60rem;
-    }
-
     .explanation{
         display: flex;
         flex-direction: column;
@@ -52,7 +45,7 @@ $pink : #BB5098;
         justify-content: center;
         margin-bottom: 5rem;
         .paragraph{
-            color:white;
+            color:$black;
             font-family: 'Noto Serif JP';
             font-weight: 100;
             font-size: .9rem;
@@ -81,7 +74,7 @@ $pink : #BB5098;
     display: flex;
     justify-content: center;
 
-    color:$white;
+    color:$black;
     font-family: 'Noto Serif JP';
 }
 

@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: "MS Moonshot",
@@ -58,6 +60,14 @@ module.exports = {
         custom: {
           families: ["Ancho-Thin"],
           urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
         },
       },
     },

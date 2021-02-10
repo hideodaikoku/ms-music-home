@@ -17,13 +17,6 @@ const paragraphStyles = {
   marginBottom: 48,
   fontWeight: 100
 }
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
 
 const linkStyle = {
   color: "yellow",

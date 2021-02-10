@@ -1,4 +1,4 @@
-$background : #2C2F33;
+$black : #2C2F33;
 $white : #FCFBFE;
 $purple : #7649fe;
 $dark : #5344A9;
@@ -241,12 +241,12 @@ html {
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: Ancho-Thin, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: "futura-pt", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
-    color: white;
+    color: black;
     line-height: 1.1;
     animation: fadein ease-in 1s;
   }
@@ -260,10 +260,10 @@ html {
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: Ancho-Thin, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: "futura-pt", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
-    color: white;
+    color: black;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
     line-height: 1.1;

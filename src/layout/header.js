@@ -1,13 +1,26 @@
 import React from "react";
-import { Link } from "gatsby";
+import { useStaticQuery,　graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 import headerStyles from "../styles/layout/header.module.scss";
 
 const Header = (props) => {
+  const data = useStaticQuery(graphql`
+  query{
+    logo: file(relativePath: {eq: "moonshot-logo.png"}){
+      childImageSharp {
+        fluid(maxWidth: 1024){
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+  `)
+
   return (
     <div>
       <nav className={headerStyles.nav}>
         <Link className={headerStyles.siteTitle} to="/">
-          <h1 className={headerStyles.title}>MSMUSIC</h1>
+          <Img fluid={data.logo.childImageSharp.fluid} className={headerStyles.logo}/>
         </Link>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.listItem}>
@@ -16,16 +29,25 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/"
             >
-              企画概要
+              Top
             </Link>
           </li>
           <li className={headerStyles.listItem}>
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/vision"
+              to="/message"
             >
-              ミッション
+              Message
+            </Link>
+          </li>
+          <li className={headerStyles.listItem}>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/about"
+            >
+              About Us
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -34,27 +56,17 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/news"
             >
-              ニュース
+              News
             </Link>
           </li>
           <li className={headerStyles.listItem}>
-            <Link
+          <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
               to="/events"
             >
-              イベント
+              Events
             </Link>
-          </li>
-          <li className={headerStyles.listItem}>
-            <a
-              className={headerStyles.link}
-              href="https://fveorefean7.typeform.com/to/u5rQJKq9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              お問い合わせ
-            </a>
           </li>
           <li className={headerStyles.listItem}>
             <Link
@@ -62,7 +74,16 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/team"
             >
-              メンバー
+              Team
+            </Link>
+          </li>
+          <li className={headerStyles.listItem}>
+            <Link
+              className={headerStyles.button}
+              activeClassName={headerStyles.activeNavItem}
+              to="/join-us"
+            >
+              Join Us
             </Link>
           </li>
         </ul>

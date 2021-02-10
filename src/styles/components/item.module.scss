@@ -3,6 +3,7 @@ $purple : #7649fe;
 $dark : #5344A9;
 $orange: #F47F6B;
 $pink : #BB5098;
+$black : #2C2F33;
 
 .card{
     display: flex;
@@ -20,7 +21,7 @@ $pink : #BB5098;
         .card-desc{
                 font-family: 'Noto Serif JP';
                 font-weight: 100;
-                color: $white;
+                color: $black;
                 margin-bottom: .2rem;
         }
     }
