@@ -2,6 +2,10 @@
 
 Home Page for Keio SFC's Moonshot Project.
 
+## Install dependencies
+
+`npm install`
+
 ## 🚀 Quick start
 
 
