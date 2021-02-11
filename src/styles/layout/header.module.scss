@@ -7,18 +7,18 @@
   background-color: $white;
   .site-title {
     margin: 0 auto;
-    .logo{
-      margin: .5rem;
+    .logo {
+      margin: 0.5rem;
       width: 15rem;
     }
   }
   .nav-list {
-    margin: .5rem .5rem 2rem 2rem;
+    margin: 0.5rem 0.5rem 2rem 2rem;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    font-family: 'futura-pt', sans-serif;
+    font-family: "futura-pt", sans-serif;
     .list-item {
       margin: 0;
       font-weight: 100;
@@ -33,12 +33,12 @@
         text-decoration: none;
         text-transform: capitalize;
       }
-      .active-nav-item{
+      .active-nav-item {
         color: black;
         font-weight: 300;
       }
-      .button{
-        background-color: #015C99;
+      .button {
+        background-color: #015c99;
         color: white;
         border-radius: 5px;
         margin: 0;
@@ -56,14 +56,14 @@
     align-items: center;
     .site-title {
       margin: 0 auto 0 0;
-      padding: .5rem;
+      padding: 0.5rem;
     }
     .nav-list {
-    margin: 0;
+      margin: 0;
       .list-item {
         .link {
-          font-size: .9rem;
-            padding: 0.2rem 1rem;
+          font-size: 0.9rem;
+          padding: 0.2rem 1rem;
         }
       }
     }
