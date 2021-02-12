@@ -1,0 +1,90 @@
+$white : #FCFBFE;
+$purple : #7649fe;
+$dark : #5344A9;
+$orange: #F47F6B;
+$pink : #BB5098;
+$black : #2C2F33;
+
+.container{
+    .topTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem;
+        .vision{
+            text-transform: uppercase;
+            color: $black;
+            font-family: 'Futura';
+            text-align: center;
+            font-size: 5rem;
+        }
+    }
+    .subtext-jp{
+        margin: 2rem auto 0 auto;
+        padding: 0 2rem;
+        text-align: center;
+        p{
+            color: $black;
+            font-weight: 100;
+            font-family: 'Noto Serif JP';
+        }
+    }
+    .subtext-en{
+        margin: 2rem auto 0 auto;
+        text-align: center;
+        p{
+            color: $black;
+            font-weight: 100;
+            font-family: 'Roboto';
+        }
+    }
+    .explanation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem;
+        .paragraph{
+            color:$black;
+            font-family: 'Noto Serif JP';
+            font-weight: 100;
+            font-size: .9rem;
+            max-width: 30rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+
+.cards{
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.bottom-text{
+    margin: 5rem auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 50rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    color:$black;
+    font-family: 'Noto Serif JP';
+}
+
+@media only screen and (min-width: 781px) {
+    .container{
+        .explanation{
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
+
