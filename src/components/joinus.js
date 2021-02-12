@@ -1,5 +1,7 @@
 import React from "react";
 
+// this component is called at top page. NOT for join-us.js
+
 const JoinUsComponent = () => {
   return (
     <>
