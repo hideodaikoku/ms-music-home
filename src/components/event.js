@@ -1,16 +1,18 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import {Link, useStaticQuery, graphql} from "gatsby";
 import Img from "gatsby-image";
 import Slider from "react-slick";
 
-import settings from "../settings/slider-options.js";
+import settings from  "../settings/slider-options.js";
 
-import slideStyles from "../styles/layout/slideshow.module.scss";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import slideStyles from "../styles/layout/slideshow.module.scss";
 
-const NewsComponent = () => {
-  const data = useStaticQuery(graphql`
+
+const EventComponent = () => {
+    const data = useStaticQuery(graphql`
     query {
       image1: file(relativePath: { eq: "blue-texture.png" }) {
         childImageSharp {
@@ -28,12 +30,16 @@ const NewsComponent = () => {
       }
     }
   `);
-
   return (
     <div className={slideStyles.container}>
+      <Slider {...settings} className="overflow-hidden">
+        <div className={slideStyles.imageContainer}>
+            <Img fluid={data.image1.childImageSharp.fluid} />
+        </div>
+      </Slider>
       <div className={slideStyles.textOverlay}>
-        <h3 className={slideStyles.titleLarge}>News</h3>
-        <Link to="/news" className={slideStyles.link}>
+        <h2 className={slideStyles.titleLargeBlue}>Event</h2>
+        <Link to="/event" className={slideStyles.link}>
           [ READ MORE
           <svg
             width="63"
@@ -47,13 +53,8 @@ const NewsComponent = () => {
           ]
         </Link>
       </div>
-      <Slider {...settings} className={"overflow-hidden "+slideStyles.slideShow}>
-        <div className={slideStyles.imageContainer}>
-          <Img fluid={data.image1.childImageSharp.fluid} />
-        </div>
-      </Slider>
     </div>
   );
 };
 
-export default NewsComponent;
+export default EventComponent;
