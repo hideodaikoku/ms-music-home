@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../layout/layout";
-import aboutStyles from "../styles/components/vision.module.scss";
+import aboutStyles from "../styles/components/about.module.scss";
 import Item from "../components/item";
 import missionData from "../data/mission.json";
 

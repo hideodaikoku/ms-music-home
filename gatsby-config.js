@@ -8,7 +8,7 @@ module.exports = {
       "Temporary Description",
     url: "https://ms-music.tokyo", // No trailing slash allowed!
     image: "/images/moonshot-logo.png", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@nNeuroMusicLab",
+    twitterUsername: "@NeuroMusicLab",
     author: "Hideo Daikoku", 
   },
   plugins: [
