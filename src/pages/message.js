@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layout/layout";
-import messageStyles from "../styles/components/message.module.scss";
+import messageStyles from "../styles/pages/message.module.scss";
 
 const Message = () => {
   return (

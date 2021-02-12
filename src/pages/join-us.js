@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layout/layout";
-import join_usStyles from "../styles/components/join-us.module.scss";
+import join_usStyles from "../styles/pages/join-us.module.scss";
 
 const JoinUs = () => {
   return (
