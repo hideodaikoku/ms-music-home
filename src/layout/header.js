@@ -8,7 +8,7 @@ const Header = (props) => {
   query{
     logo: file(relativePath: {eq: "moonshot-logo.png"}){
       childImageSharp {
-        fluid(maxWidth: 1024){
+        fluid(maxWidth: 1080){
           ...GatsbyImageSharpFluid
         }
       }

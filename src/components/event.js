@@ -1,45 +1,15 @@
 import React from "react";
-import {Link, useStaticQuery, graphql} from "gatsby";
-import Img from "gatsby-image";
-import Slider from "react-slick";
-
-import settings from  "../settings/slider-options.js";
-
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import slideStyles from "../styles/layout/slideshow.module.scss";
-
+import { Link } from "gatsby"
+import landingStyles from "../styles/layout/landing.module.scss";
+import eventStyles from "../styles/components/event.module.scss";
 
 const EventComponent = () => {
-    const data = useStaticQuery(graphql`
-    query {
-      image1: file(relativePath: { eq: "blue-texture.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1024) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      image2: file(relativePath: { eq: "society.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1024) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+    
   return (
-    <div className={slideStyles.container}>
-      <Slider {...settings} className="overflow-hidden">
-        <div className={slideStyles.imageContainer}>
-            <Img fluid={data.image1.childImageSharp.fluid} />
-        </div>
-      </Slider>
-      <div className={slideStyles.textOverlay}>
-        <h2 className={slideStyles.titleLargeBlue}>Event</h2>
-        <Link to="/event" className={slideStyles.link}>
+    <div className={landingStyles.container+" "+eventStyles.background}>
+      <div className={landingStyles.textOverlay}>
+        <h2 className={landingStyles.titleLargeBlue}>Event</h2>
+        <Link to="/event" className={landingStyles.link}>
           [ READ MORE
           <svg
             width="63"
