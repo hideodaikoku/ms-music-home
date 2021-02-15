@@ -163,5 +163,12 @@ $black: #2c2f33;
     width: 70vw;
     text-align: center;
   }
+
+  .cards{
+    display: flex;
+    max-width: 70vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
 }
 

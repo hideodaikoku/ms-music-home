@@ -1,12 +1,59 @@
-import React from "react"
+import React from "react";
 import Layout from "../layout/layout";
+import { useStaticQuery, graphql } from "gatsby";
 
-const News = () => {
-    return(
-        <Layout>
-            <h2>News</h2>
-        </Layout>
-    )
-}
+import Article from "../components/article";
+import Img from "gatsby-image";
+import newsStyles from "../styles/pages/news.module.scss";
+import newsData from "../data/news.json";
+
+const News = (props) => {
+  const data = useStaticQuery(graphql`
+    query {
+      top: file(relativePath: { eq: "blue-texture.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+  const articleData = newsData.slice(0).reverse();
+  return (
+    <Layout>
+      <div className={newsStyles.container}>
+        <div className={newsStyles.topSection}>
+          <div className={newsStyles.imageContainer}>
+            <Img
+              fluid={data.top.childImageSharp.fluid}
+              className={newsStyles.image}
+            />
+            <small className={newsStyles.copyright}>
+              &copy; Hazuki Ota, 2021
+            </small>
+            <h2 className={newsStyles.titleText}>
+              <strong className={newsStyles.latest}>Latest: </strong>
+              {articleData[0].title}
+            </h2>
+            <small className={newsStyles.date}>{articleData[0].date}</small>
+            <div className={newsStyles.desc}>{articleData[0].desc}</div>
+          </div>
+          <div className={newsStyles.articles}>
+            {articleData.map((obj) => (
+              <Article
+                key={obj.index}
+                title={obj.title}
+                date={obj.date}
+                desc={obj.desc}
+                index={obj.index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
 export default News;

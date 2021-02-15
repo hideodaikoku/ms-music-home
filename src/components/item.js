@@ -50,7 +50,8 @@ const Item =(props)=>{
                     props.ja.split('\n').map(line => 
                         <p className={itemStyles.cardDesc}>
                             {line}
-                        </p>)}
+                        </p>)
+                }
             </div>
         </div>
     )

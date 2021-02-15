@@ -34,19 +34,44 @@ $black: #2c2f33;
     .image {
       height: 100%;
       object-fit: cover;
+      img {
+        animation: rotate 3s ease infinite;
+      }
     }
   }
 }
 
-@media only screen and (min-width: 781px) {
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media only screen and (min-width: 1080px) {
   .card {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: left;
+    width: 50%;
+    margin: 1rem 0 0 0;
     .card-image {
-      width: 20rem;
-      height: 20rem;
-      margin-right: 1rem;
       margin-bottom: 0;
+      margin-right: 3rem;
+      min-width: 12rem;
+      min-height: 12rem;
+      img {
+        object-fit: fill;
+      }
+    }
+    .card-text {
+      .card-title {
+        text-align: justify;
+      }
+      .card-desc {
+        text-align: justify;
+      }
     }
   }
 }
