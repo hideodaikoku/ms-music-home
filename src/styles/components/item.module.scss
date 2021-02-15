@@ -1,51 +1,52 @@
-$white : #FCFBFE;
-$purple : #7649fe;
-$dark : #5344A9;
-$orange: #F47F6B;
-$pink : #BB5098;
-$black : #2C2F33;
+$white: #fcfbfe;
+$purple: #7649fe;
+$dark: #5344a9;
+$orange: #f47f6b;
+$pink: #bb5098;
+$black: #2c2f33;
 
-.card{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-    padding: 1rem;
-    max-width: 50rem;
-    border-radius: .5rem;
-    background-color: rgba(59, 58, 58, 0.644);
-    .card-text{
-        .card-title{
-            font-family: 'Noto Serif JP';
-            margin-bottom: 2rem;
-        }
-        .card-desc{
-                font-family: 'Noto Serif JP';
-                font-weight: 100;
-                color: $black;
-                margin-bottom: .2rem;
-        }
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  width: 90vw;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  .card-text {
+    .card-title {
+      font-family: "YuGothic";
+      margin-bottom: 2rem;
+      text-align: center;
     }
-    .card-image{
-        max-width: 25rem;
-        height: 12rem;
-        margin-bottom: 1rem;
-        .image{
-                height: 100%;
-                object-fit: contain;
-        }
+    .card-desc {
+      font-family: "YuGothic";
+      font-weight: 100;
+      color: $black;
+      margin-bottom: 0.2rem;
+
+      text-align: center;
     }
+  }
+  .card-image {
+    width: 12rem;
+    height: 12rem;
+    .image {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
-
 
 @media only screen and (min-width: 781px) {
-    .card{
-        flex-direction: row;
-        flex-wrap: wrap;
-        .card-image{
-            width: 20rem;
-            margin-right: 1rem;
-            margin-bottom: 0;
-        }
+  .card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card-image {
+      width: 20rem;
+      height: 20rem;
+      margin-right: 1rem;
+      margin-bottom: 0;
     }
+  }
 }
-

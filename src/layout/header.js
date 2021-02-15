@@ -27,15 +27,6 @@ const Header = (props) => {
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/"
-            >
-              トップ
-            </Link>
-          </li>
-          <li className={headerStyles.listItem}>
-            <Link
-              className={headerStyles.link}
-              activeClassName={headerStyles.activeNavItem}
               to="/message"
             >
               メッセージ
@@ -66,6 +57,15 @@ const Header = (props) => {
               to="/events"
             >
               イベント
+            </Link>
+          </li>
+          <li className={headerStyles.listItem}>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/projects"
+            >
+              プロジェクト
             </Link>
           </li>
           <li className={headerStyles.listItem}>

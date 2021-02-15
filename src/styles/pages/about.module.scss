@@ -1,90 +1,167 @@
-$white : #FCFBFE;
-$purple : #7649fe;
-$dark : #5344A9;
-$orange: #F47F6B;
-$pink : #BB5098;
-$black : #2C2F33;
+$white: #fcfbfe;
+$blue: #015c99;
+$dark: #5344a9;
+$orange: #f47f6b;
+$pink: #bb5098;
+$black: #2c2f33;
 
-.container{
-    .topTitle{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 5rem;
-        .vision{
-            text-transform: uppercase;
-            color: $black;
-            font-family: 'Futura';
-            text-align: center;
-            font-size: 5rem;
-        }
-    }
-    .subtext-jp{
-        margin: 2rem auto 0 auto;
-        padding: 0 2rem;
-        text-align: center;
-        p{
-            color: $black;
-            font-weight: 100;
-            font-family: 'Noto Serif JP';
-        }
-    }
-    .subtext-en{
-        margin: 2rem auto 0 auto;
-        text-align: center;
-        p{
-            color: $black;
-            font-weight: 100;
-            font-family: 'Roboto';
-        }
-    }
-    .explanation{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5rem;
-        .paragraph{
-            color:$black;
-            font-family: 'Noto Serif JP';
-            font-weight: 100;
-            font-size: .9rem;
-            max-width: 30rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-    }
-}
-
-
-.cards{
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 100%;
-    position: relative;
-}
-
-.bottom-text{
-    margin: 5rem auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 50rem;
-    text-align: center;
+.container {
+  .top-title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
-    color:$black;
-    font-family: 'Noto Serif JP';
+    width: 90vw;
+    margin: 3rem auto 0 auto;
+    position: relative;
+    .vision {
+      text-transform: uppercase;
+      color: $black;
+      font-family: "futura-pt";
+      font-weight: 500;
+      text-align: center;
+      font-size: 5rem;
+    }
+    .overlay {
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: gray;
+      opacity: 60%;
+      font-family: "futura-pt";
+      font-weight: 600;
+      margin: 0 auto;
+      width: 75vw;
+      overflow: hidden;
+      #top {
+        animation: slide-left 30s infinite linear;
+        white-space: nowrap;
+        display: inline;
+      }
+      #bottom{
+        top: 2rem;
+        animation: slide-delay 30s infinite linear;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline;
+      }
+    }
+  }
+  .subtext-jp {
+    width: 90vw;
+    margin: 3rem auto;
+    padding: 0;
+    text-align: left;
+    p {
+      color: $blue;
+      font-weight: 600;
+      font-family: "YuGothic";
+      margin: 0;
+      line-height: 2rem;
+    }
+  }
+  .explanation {
+    width: 90vw;
+    margin: 0 auto 3rem auto;
+    padding-left: 0;
+    .paragraph {
+      color: $black;
+      font-weight: 600;
+      font-family: "YuGothic";
+      font-weight: 100;
+      font-size: 0.9rem;
+      max-width: 60rem;
+      line-height: 2rem;
+    }
+  }
 }
+
+.cards {
+  margin: 3rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.bottom-text {
+  margin: 5rem auto;
+  width: 90vw;
+  font-weight: 500;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+
+  color: $black;
+  font-family: "YuGothic";
+}
+
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: -100%;
+    width: 100%;
+  }
+}
+
+@keyframes slide-delay {
+    from {
+      margin-left: 120%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: -120%;
+      width: 100%;
+    }
+  }
+
+
 
 @media only screen and (min-width: 781px) {
-    .container{
-        .explanation{
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-        }
+  .container {
+    .top-title {
+      .vision {
+        text-transform: uppercase;
+        color: $black;
+        font-family: "futura-pt";
+        font-weight: 500;
+        text-align: center;
+        font-size: 12rem;
+        width: 80vw;
+        margin: 3rem auto;
+      }
+      .overlay{
+          top: 10rem;
+          width: 70vw;
+      }
+      .subtext-jp {
+        padding-left: 5rem;
+        width: 70vw;
+      }
     }
+    .explanation {
+      width: 70vw;
+      margin: 0 auto 3rem auto;
+      padding-left: 0;
+      .paragraph {
+        padding-left: 5rem;
+        color: $black;
+        font-weight: 600;
+        font-family: "YuGothic";
+        font-weight: 100;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .bottom-text{
+    width: 70vw;
+    text-align: center;
+  }
 }
 
