@@ -1,0 +1,52 @@
+.container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  .message-section{
+    .message-title{
+      font-family: 'YuGothic', sans-serif;
+      font-weight: 500;
+      font-size: 2rem;
+      padding: 5rem 3rem;
+      max-width: 80vw;
+      color: white;
+      margin: 3rem auto;
+      background-image: url('../../images/blue-texture.png');
+      background-size: contain;
+    }
+    .paragraph{
+      margin: 1rem auto;
+      max-width: 80vw;
+      font-family: 'YuGothic', sans-serif;
+      font-weight: 100;
+    }
+    .byline{
+      margin: 3rem auto;
+      max-width: 80vw;
+      font-family: 'YuGothic', sans-serif;
+      font-weight: 600;
+    }
+  }
+  .image-section{
+    margin: 3rem auto;
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 842px) {
+  .container{
+    flex-direction: row;
+    padding: 5rem;
+    align-items: center;
+    .message-section{
+      max-width: 40vw;
+      position: relative;
+      .message-title{
+        width: 50vw;
+      }
+    }
+    .image-section{
+      width: 40vw;
+    }
+  }
+}

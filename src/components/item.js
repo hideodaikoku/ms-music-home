@@ -6,30 +6,30 @@ import itemStyles from "../styles/components/item.module.scss";
 const Item =(props)=>{
     const data = useStaticQuery(graphql`
     query{
-        person: file(relativePath: {eq:"human.jpg"}){
+        person: file(relativePath: {eq:"red-disk.png"}){
             childImageSharp {
-                fluid(maxWidth: 1024) {
+                fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
         }
-        society: file(relativePath: {eq:"society.jpg"}){
+        society: file(relativePath: {eq:"green-disk.png"}){
             childImageSharp {
-                fluid(maxWidth: 1024) {
+                fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
         }
-        earth: file(relativePath: {eq:"earth.jpg"}){
+        earth: file(relativePath: {eq:"orange-disk.png"}){
             childImageSharp {
-                fluid(maxWidth: 1024) {
+                fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
         }
-        planet: file(relativePath: {eq:"space.jpg"}){
+        planet: file(relativePath: {eq:"blue-disk.png"}){
             childImageSharp {
-                fluid(maxWidth: 1024) {
+                fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -50,7 +50,8 @@ const Item =(props)=>{
                     props.ja.split('\n').map(line => 
                         <p className={itemStyles.cardDesc}>
                             {line}
-                        </p>)}
+                        </p>)
+                }
             </div>
         </div>
     )

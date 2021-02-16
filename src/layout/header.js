@@ -8,7 +8,7 @@ const Header = (props) => {
   query{
     logo: file(relativePath: {eq: "moonshot-logo.png"}){
       childImageSharp {
-        fluid(maxWidth: 1024){
+        fluid(maxWidth: 1080){
           ...GatsbyImageSharpFluid
         }
       }
@@ -27,18 +27,9 @@ const Header = (props) => {
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/"
-            >
-              Top
-            </Link>
-          </li>
-          <li className={headerStyles.listItem}>
-            <Link
-              className={headerStyles.link}
-              activeClassName={headerStyles.activeNavItem}
               to="/message"
             >
-              Message
+              メッセージ
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -47,7 +38,7 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/about"
             >
-              About Us
+              概要
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -56,7 +47,7 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/news"
             >
-              News
+              ニュース
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -65,7 +56,16 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/events"
             >
-              Events
+              イベント
+            </Link>
+          </li>
+          <li className={headerStyles.listItem}>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/projects"
+            >
+              プロジェクト
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -74,7 +74,7 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/team"
             >
-              Team
+              チーム
             </Link>
           </li>
           <li className={headerStyles.listItem}>
@@ -83,7 +83,7 @@ const Header = (props) => {
               activeClassName={headerStyles.activeNavItem}
               to="/join-us"
             >
-              Join Us
+              お問い合わせ
             </Link>
           </li>
         </ul>

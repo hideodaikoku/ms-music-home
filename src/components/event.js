@@ -1,13 +1,15 @@
 import React from "react";
-import {Link} from "gatsby";
+import { Link } from "gatsby"
 import landingStyles from "../styles/layout/landing.module.scss";
+import eventStyles from "../styles/components/event.module.scss";
 
-const JoinUsComponent = () => {
+const EventComponent = () => {
+    
   return (
-    <div className={landingStyles.container}>
+    <div className={landingStyles.container+" "+eventStyles.background}>
       <div className={landingStyles.textOverlay}>
-        <h2 className={landingStyles.titleLargeBlue}>Join Us</h2>
-        <Link to="/join-us" className={landingStyles.link}>
+        <h2 className={landingStyles.titleLargeBlue}>Event</h2>
+        <Link to="/event" className={landingStyles.link}>
           [ READ MORE
           <svg
             width="63"
@@ -25,4 +27,4 @@ const JoinUsComponent = () => {
   );
 };
 
-export default JoinUsComponent;
+export default EventComponent;
