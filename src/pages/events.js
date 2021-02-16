@@ -24,6 +24,7 @@ const Events = (props) => {
     <Layout>
       <div className={eventStyles.container}>
         <div className={eventStyles.topSection}>
+          <h2 className={eventStyles.titleLarge}>Events</h2>
           <div className={eventStyles.imageContainer}>
             <Img
               fluid={data.top.childImageSharp.fluid}

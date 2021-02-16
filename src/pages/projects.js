@@ -24,6 +24,7 @@ const Projects = (props) => {
     <Layout>
       <div className={projectStyles.container}>
         <div className={projectStyles.topSection}>
+          <h2 className={projectStyles.titleLarge}>Projects</h2>
           <div className={projectStyles.imageContainer}>
             <Img
               fluid={data.top.childImageSharp.fluid}

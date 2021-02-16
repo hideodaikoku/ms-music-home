@@ -24,6 +24,7 @@ const News = (props) => {
     <Layout>
       <div className={newsStyles.container}>
         <div className={newsStyles.topSection}>
+          <h2 className={newsStyles.titleLarge}>News</h2>
           <div className={newsStyles.imageContainer}>
             <Img
               fluid={data.top.childImageSharp.fluid}

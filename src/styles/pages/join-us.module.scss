@@ -1,35 +1,66 @@
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
+    .title-large{
+      font-family: 'futura-pt', sans-serif;
+      font-weight: 500;
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;   
+    }
+    .form-container{
+      max-width: 60vw;
+      margin: 0 auto;
+      .label{
+        padding-right: 2rem;
+      }
+      sup{
+        color: red;
+      }
+      
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 1rem; 
+        border: 1px solid #ccc;
+        border-radius: .5rem; 
+        box-sizing: border-box;
+        margin-top: .5rem; 
+        margin-bottom: 1.5rem; 
+        resize: vertical;
+      }
+      
+      input[type="email"]{
+        width: 100%; 
+        padding: 12px; /* Some padding */
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: .5rem; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+      }
+      
+      
+      .submit{
+        background-color: #015c99;
+        border: none;
+        color: white;
+        border-radius: .6rem;
+        padding: .5rem 1rem;
+      }
+    }
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+
+@media only screen and (min-width: 842px) {
+  .container{
+    .form-container{
+      max-width: 30vw;
+    }
+  }
 }
 
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
