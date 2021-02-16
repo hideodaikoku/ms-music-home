@@ -7,7 +7,7 @@ const JoinUs = () => {
     <Layout>
       <h2>Join Us</h2>
       <div className={join_usStyles.container}>
-        <form labe="contact-form">
+        <form label="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <label htmlFor="name">名前</label>
           <input type="text" id="name" name="name" />
 
