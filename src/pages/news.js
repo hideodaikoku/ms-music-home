@@ -33,7 +33,9 @@ const News = (props) => {
               &copy; Hazuki Ota, 2021
             </small>
             <h2 className={newsStyles.titleText}>
-              <strong className={newsStyles.latest}>Latest: </strong>
+              <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span>
+              
+              <strong className={newsStyles.latest}>ニュース</strong>
               {articleData[0].title}
             </h2>
             <small className={newsStyles.date}>{articleData[0].date}</small>
