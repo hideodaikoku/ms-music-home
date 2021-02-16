@@ -7,7 +7,10 @@ const JoinUs = () => {
     <Layout>
       <h2>Join Us</h2>
       <div className={join_usStyles.container}>
-        <form label="contact-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="contact-form" value="contact" />
+          
           <label htmlFor="name">名前</label>
           <input type="text" id="name" name="name" />
 
@@ -22,6 +25,8 @@ const JoinUs = () => {
           <textarea type="text" id="message" name="message" rows="5" />
 
           <button>送信</button>
+
+          
         </form>
       </div>
     </Layout>
