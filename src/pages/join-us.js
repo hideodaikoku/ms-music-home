@@ -21,7 +21,7 @@ const JoinUs = () => {
           <label htmlFor="message">お問い合わせ内容</label>
           <textarea type="text" id="message" name="message" rows="5" />
 
-          <input type="submit" value="送信" />
+          <button type="submit" value="送信" />
         </form>
       </div>
     </Layout>
