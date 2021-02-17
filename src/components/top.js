@@ -6,7 +6,7 @@ const TopComponent = () => {
   return (
     <div className={landingStyles.container}>
       <div className={landingStyles.textOverlay}>
-        <h3 className={landingStyles.title}>MS音楽感動共創プロジェクト</h3>
+        <h3 className={landingStyles.title}>MS音楽感動共創メッセージ</h3>
         <h4 className={landingStyles.subtext}>
           2050年 芸術科学立国を成し遂げ
           <br />

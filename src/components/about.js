@@ -6,7 +6,7 @@ const AboutComponent = () => {
   return (
     <div className={landingStyles.container}>
       <div className={landingStyles.textOverlay}>
-        <h2 className={landingStyles.titleLargeBlue}>About</h2>
+        <h2 className={landingStyles.titleLargeBlue}>Vision</h2>
         <Link to="/about" className={landingStyles.link}>
           [ READ MORE
           <svg

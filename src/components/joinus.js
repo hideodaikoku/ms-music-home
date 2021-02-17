@@ -6,7 +6,7 @@ const JoinUsComponent = () => {
   return (
     <div className={landingStyles.container}>
       <div className={landingStyles.textOverlay}>
-        <h2 className={landingStyles.titleLargeBlue}>Join Us</h2>
+        <h2 className={landingStyles.titleLargeBlue}>Contact</h2>
         <Link to="/join-us" className={landingStyles.link}>
           [ READ MORE
           <svg

@@ -14,7 +14,7 @@ const Team = () => {
     <Layout>
       <div className={teamStyles.container}>
         <div className={teamStyles.topSection}>
-          <h2 className={teamStyles.titleLarge}>Team</h2>
+          <h2 className={teamStyles.titleLarge}>Members</h2>
           <div className={teamStyles.faculty}>
             {facultyData.map((faculty, key) => (
               <Faculty
@@ -34,7 +34,6 @@ const Team = () => {
           </h1>
           <p style={{color:"gray", fontWeight:500}}> 慶応義塾大学 学生有志・東京大学 学生有志</p>
           <div className={teamStyles.studentLeaders}>
-            <h2 style={{fontSize:"2rem",fontWeight:200}}>チームリーダー</h2>
             {leaderData.map((student, i) => (
               <Student
                 key={i}

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={footerStyles.container}>
-        <small className={footerStyles.copyright}>&copy; 2021, Keio University Shonan Fujisawa Campus.</small>
+        <small className={footerStyles.copyright}>&copy; 2021, MS Music Project.</small>
       </div>
     </footer>
   );

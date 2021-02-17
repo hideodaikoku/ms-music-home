@@ -6,7 +6,12 @@ const JoinUs = () => {
   return (
     <Layout>
       <div className={join_usStyles.container}>
-        <h2 className={join_usStyles.titleLarge}>Join Us</h2>
+        <h2 className={join_usStyles.titleLarge}>Contact</h2>
+        <ul style={{maxWidth:"60vw"}}>
+          <li>私たちの取り組みについてのお問合せは、下記フォームより必要事項を記入してお送りください。</li>
+          <li>お名前やメールアドレスに誤りのないようご注意ください。</li>
+          <li>なお、お問い合わせ内容によっては返信に時間を要する場合や、返信そのものを差し控えさせて頂く場合がございますことをあらかじめご了承ください。</li>
+        </ul>
         <div className={join_usStyles.formContainer}>
           <form
             method="post"

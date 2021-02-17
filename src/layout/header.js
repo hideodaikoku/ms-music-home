@@ -59,22 +59,22 @@ const Header = (props) => {
               イベント
             </Link>
           </li>
-          <li className={headerStyles.listItem}>
+          {/* <li className={headerStyles.listItem}>
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
               to="/projects"
             >
-              プロジェクト
+              調査
             </Link>
-          </li>
+          </li> */}
           <li className={headerStyles.listItem}>
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
               to="/team"
             >
-              チーム
+              メンバー
             </Link>
           </li>
           <li className={headerStyles.listItem}>
