@@ -29,6 +29,37 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "faculty-images",
+        path: `${__dirname}/src/images/faculty`,
+      },
+    },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "news-images",
+        path: `${__dirname}/src/images/news`,
+      },
+    },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "project-images",
+        path: `${__dirname}/src/images/projects`,
+      },
+    },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "student-images",
+        path: `${__dirname}/src/images/students`,
+      },
+    },
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     {

@@ -1,47 +1,128 @@
 [
-    {
-        "id": "",
-        "image": "",    
-        "title":"",
-        "name": "",
-        "position":"",
-        "introduction": "",
-        "photo_credit": ""
-    },
-    {
-        "id": "",
-        "image": "",    
-        "title":"",
-        "name": "",
-        "position":"",
-        "introduction": "",
-        "photo_credit": ""
-    },
-    {
-        "id": "",
-        "image": "",    
-        "title":"",
-        "name": "",
-        "position":"",
-        "introduction": "",
-        "photo_credit": ""
-    },
-    {
-        "id": "",
-        "image": "",    
-        "title":"",
-        "name": "",
-        "position":"",
-        "introduction": "",
-        "photo_credit": ""
-    },
-    {
-        "id": "",
-        "image": "",    
-        "title":"",
-        "name": "",
-        "position":"",
-        "introduction": "",
-        "photo_credit": ""
-    }
+  {
+    "id": "tanaka",
+    "image": "tanaka",
+    "name": "田中堅大",
+    "position": "慶應義塾大学大学院政策・メディア研究科",
+    "responsibility": "テクノロジーサーベイ",
+    "leader": "TRUE",
+    "profile": "1993年、東京都生まれ。ギタリスト／都市音楽家（Urban Composer）。都市論を音楽／サウンドアート制作に応用することで、都市を主題に音を紡ぐ「都市作曲（Urban Composition）」の確立を模索している。European Postgraduate in Arts in Soundにて、ベルギー・オランダ・フランスを巡りサウンドアートを研究したのち、個展として、都市の記憶を回想するサウンドインスタレーション「Urban Reminiscence——Sound, Object, and Rhythm」Sta.・東京（2020）を開催。主な展示作品に「Algorithmic Urban Composition」スタンフォード大学コンピューター音楽音響技術研究施設聴取室（2019）など。音楽を取り巻く環境への批評zine『jingle』の出版、蓮沼執太フルフィルへの参加、ファッション／ダンス／映像作品への音楽提供など、音楽を中心として多岐に渡る活動を展開。"
+  },
+  {
+    "id": "honda",
+    "image": "honda",
+    "name": "本多栞",
+    "position": "慶應義塾大学大学院 医学研究科 博士課程1年",
+    "responsibility": "アンケート",
+    "leader": "TRUE",
+    "profile": "精神・神経科学教室、神経病態生理学研究室所属。学士課程はマウスの聴覚刺激誘発型の感情変化を音声分析する研究に従事。修士課程より精神疾患患者の病態生理や病態と音楽能力の関連についてMRスペクトロスコピーや脳構造・機能画像法を用いて検討。2021年4月より日本学術振興会特別研究員（DC1）。"
+  },
+  {
+    "id": "sakamoto",
+    "image": "sakamoto",
+    "name": "坂本嵩",
+    "position": "慶應義塾大学大学院 政策・メディア研究科",
+    "responsibility": "サイエンスサーベイ",
+    "leader": "TRUE",
+    "profile": "1998年生まれ。慶應義塾大学環境情報学部（飛び級卒業）を経て、慶應義塾大学大学院政策・メディア研究科に在籍中（GAOスカラシップにより学費全額免除）。ソニーコンピューターサイエンス研究所インターン生、元NTTコミュニケーション科学基礎研究所実習生。\n高校在学時にチャイコフスキーの旋律と和音進行に心を惹かれ、主観的でありながらも普遍的である「感動」の正体を探るためSFCに入学。「音楽で感動を増やす」ことを最終目標に、感動を神経生理学的に定義づける研究に取り組んでいる。\n今はイカの塩辛とサカナクションとシルビウス溝が好き。"
+  },
+  {
+    "id": "samma",
+    "image": "samma",
+    "name": "三摩朋弘",
+    "position": "慶應義塾大学環境情報学部",
+    "responsibility": "ワークショップ",
+    "leader": "TRUE",
+    "profile": "1997年生まれ。慶應義塾大学環境情報学部在学。幼少期からエレクトーンとドラムを始め、10歳で出会った吹奏楽にのめりこみ今に至る。「吹奏楽の科学的研究」に強い意欲を持ち、現在は吹奏楽コンクールの審査に演奏者の見た目が与える影響について研究を進めている。川崎フロンターレとバンコクが好き。"
+  },
+  {
+    "id": "leo",
+    "image": "leo",
+    "name": "チュ　サンボム",
+    "position": "慶應義塾大学大学院 政策・メディア研究科",
+    "responsibility": "ウェブ広報",
+    "leader": "TRUE",
+    "profile": "３カ国語、プログラマー、シンガーソングライター。\n韓国生まれ、アメリカで中・高・New York University経て、２０１６年慶應義塾大学SFCの学部に入学、同大学の院に進んでいる。\n音楽とプログラミングへのパッションを生かして、「いい発声、歌声とは計量的に何か」をテーマとした。学部の時は音声疾患者の音声データをA.I.で分類を行った。現在はいい発声を客観的、科学的に理解し、学習者に効果的に伝える方法を考え、開発している。"
+  },
+  {
+    "id": "ozaki",
+    "image": "ozaki",
+    "name": "尾崎 雄人",
+    "position": "慶應義塾大学大学院 政策・メディア研究科",
+    "responsibility": "サイエンスサーベイ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "sotaro",
+    "image": "sotaro",
+    "name": "近藤聡太郎",
+    "position": "東京大学大学院総合文化研究科広域科学専攻（岡ノ谷研究室）",
+    "responsibility": "サイエンスサーベイ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "jun",
+    "image": "jun",
+    "name": "仁田純",
+    "position": "東京大学大学院総合文化研究科",
+    "responsibility": "サイエンスサーベイ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "haruka",
+    "image": "haruka",
+    "name": "近藤はるか",
+    "position": "慶應義塾大学大学院 政策・メディア研究科 修士課程 1年",
+    "responsibility": "ワークショップ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "miku",
+    "image": "miku",
+    "name": "藤本未来",
+    "position": "慶應義塾大学大学・環境情報学部",
+    "responsibility": "アンケート",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "bando",
+    "image": "bando",
+    "name": "板東央矩",
+    "position": "慶應大学医学部 精神・神経科",
+    "responsibility": "サイエンスサーベイ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "nakahara",
+    "image": "nakahara",
+    "name": "中原知美",
+    "position": "慶應義塾大学医学部",
+    "responsibility": "サイエンスサーベイ, ワークショップ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "homma",
+    "image": "homma",
+    "name": "本間咲希",
+    "position": "慶應義塾大学環境情報学部",
+    "responsibility": "アンケート",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "sakakibara",
+    "image": "sakakibara",
+    "name": "榊原佑奈",
+    "position": "慶応義塾大学総合政策学部",
+    "responsibility": "アンケート, ワークショップ",
+    "leader": "FALSE",
+    "profile": ""
+  }
 ]

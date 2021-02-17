@@ -1,0 +1,30 @@
+.container {
+  .top-section {
+    width: 70vw;
+    margin: 5rem auto;
+    .title-large {
+      font-family: "futura-pt", sans-serif;
+      font-weight: 500;
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;
+    }
+  }
+  .student-members{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 781px) {
+    .container{
+        .top-section{
+            .title-large{
+                font-size: 5rem;
+            }
+        }
+    }
+}

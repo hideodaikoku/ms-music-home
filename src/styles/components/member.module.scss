@@ -1,0 +1,34 @@
+$blue: #015C99;
+.member-member{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 15rem;
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        .identity{
+            margin-bottom: 1rem;
+            .name{
+                font-size: 1.5rem;
+                font-family: 'YuGothic';
+                font-weight: 500;
+                color: $blue;
+            }
+            .position{
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            .responsibility{
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+        .image-container{
+            max-width: 20rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

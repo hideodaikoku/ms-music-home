@@ -1,0 +1,56 @@
+$blue: #015C99;
+.student-member{
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin: 3rem auto;
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        .responsibility{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .image-container{
+            max-width: 20rem;
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        .identity{
+            margin-bottom: 1rem;
+            .name{
+                font-size: 1.8rem;
+                font-family: 'YuGothic';
+                font-weight: 500;
+                color: $blue;
+            }
+            .position{
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+        .bio{
+            display: flex;
+            flex-direction: column;
+            .paragraph{
+                margin-bottom: 1rem;
+                font-weight: 500;
+            }
+        }
+    }   
+}
+
+@media only screen and (min-width: 1080px){
+    .student-member{
+        flex-direction: row;
+        align-items: top;
+        .profile-container{
+            min-width: 25rem;
+            margin-right: 2rem;
+        }
+    }
+}

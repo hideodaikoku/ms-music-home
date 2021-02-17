@@ -5,6 +5,7 @@
       font-family: 'futura-pt', sans-serif;
       font-weight: 500;
       font-size: 4rem;
+      margin-top: 3rem;
       margin-bottom: 3rem;
       text-transform: uppercase;
       text-align: center;
@@ -57,6 +58,9 @@
 
 @media only screen and (min-width: 842px) {
   .container{
+    .title-large{
+      font-size: 5rem;
+    }
     .form-container{
       max-width: 30vw;
     }
