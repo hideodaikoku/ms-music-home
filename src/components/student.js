@@ -46,7 +46,6 @@ const Student = (props) => {
   return (
     <div className={studentStyles.studentMember}>
       <div className={studentStyles.profileContainer}>
-        <h3 className={studentStyles.responsibility}>{props.responsibility}</h3>
         <div className={studentStyles.imageContainer}>
         {data[props.image]?<Img fluid={data[props.image].childImageSharp.fluid} />:"no image"}
         </div>

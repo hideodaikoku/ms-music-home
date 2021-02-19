@@ -47,7 +47,7 @@ const Item =(props)=>{
             <div className={itemStyles.cardText}>
                 <h1 className={itemStyles.cardTitle}>{props.title}</h1>
                 {
-                    props.ja.split('\n').map((i,line) => 
+                    props.ja.split('\n').map((line, i) => 
                         <p className={itemStyles.cardDesc} key={i}>
                             {line}
                         </p>)
