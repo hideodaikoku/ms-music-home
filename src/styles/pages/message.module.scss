@@ -7,6 +7,7 @@
       font-family: 'YuGothic', sans-serif;
       font-weight: 500;
       font-size: 2rem;
+      line-height: 3rem;
       padding: 5rem 3rem;
       max-width: 80vw;
       color: white;
@@ -17,8 +18,9 @@
     .paragraph{
       margin: 1rem auto;
       max-width: 80vw;
-      font-family: 'YuGothic', sans-serif;
+      font-family: sans-serif;
       font-weight: 100;
+      line-height: 2rem;
     }
     .byline{
       margin: 3rem auto;
@@ -41,9 +43,6 @@
     .message-section{
       max-width: 40vw;
       position: relative;
-      .message-title{
-        width: 50vw;
-      }
     }
     .image-section{
       width: 40vw;

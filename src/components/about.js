@@ -1,12 +1,16 @@
 import React from "react";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 import landingStyles from "../styles/layout/landing.module.scss";
 
 const AboutComponent = () => {
   return (
     <div className={landingStyles.container}>
       <div className={landingStyles.textOverlay}>
-        <h2 className={landingStyles.titleLargeBlue}>Vision</h2>
+        <h3 className={landingStyles.titleLargeBlue}>Vision</h3>
+        <p className={landingStyles.desc}>
+          私たちは、芸術科学立国を成し遂げ、ムーンショット音楽芸術を地球全体で共創します。
+          全地球生命が一体となり、地球文化の普遍性を宇宙に響鳴させる感動の音楽芸術です。
+        </p>
         <Link to="/about" className={landingStyles.link}>
           [ READ MORE
           <svg

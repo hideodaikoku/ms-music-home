@@ -4,6 +4,19 @@ Home Page for Keio SFC's Moonshot Project.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/875543b0-4049-416d-b8ef-e847db5ac252/deploy-status)](https://app.netlify.com/sites/friendly-brahmagupta-8b92ff/deploys)
 
+## TODO
+- [x] Top Page
+- [x] Header
+- [x] Layout fixes
+- [x] Members
+- [x] Contact form
+- [ ] Footer
+- [ ] Privacy Policy
+- [ ] Terms and Conditions
+- [ ] Netlify CMS
+- [ ] Google Analytics
+- [ ] SCSS Cleanup
+
 ## Install dependencies
 
 `npm install`

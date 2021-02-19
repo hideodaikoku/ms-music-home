@@ -5,11 +5,11 @@ module.exports = {
     title: "MS Moonshot",
     titleTemplate: "%s | Music in 2050",
     description:
-      "Temporary Description",
+      "2050年の社会における音楽芸術はどのようなものでしょうか",
     url: "https://ms-music.tokyo", // No trailing slash allowed!
     image: "/images/moonshot-logo.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@NeuroMusicLab",
-    author: "Hideo Daikoku", 
+    author: "Hideo Daikoku, Hazuki Ota, Leonard Choo", 
   },
   plugins: [
     "gatsby-plugin-sass",

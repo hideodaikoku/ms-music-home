@@ -61,13 +61,25 @@ const Faculty = (props) => {
       <div className={facultyStyles.text}>
         <div className={facultyStyles.identity}>
           <h3 className={facultyStyles.name}>{props.name}</h3>
-          <small className={facultyStyles.position}>
-            {props.position}
-          </small>
+          <small className={facultyStyles.position}>{props.position}</small>
         </div>
         <div className={facultyStyles.bio}>
-          <p className={facultyStyles.paragraph}>{props.profile_a}</p>
-          <p className={facultyStyles.paragraph}>{props.profile_b}</p>
+          <p className={facultyStyles.paragraph}>
+            {props.profile_a.split('\n').map((line, i) => (
+              <div key={i}>
+                {line}
+                <br />
+              </div>
+            ))}
+          </p>
+          <p className={facultyStyles.paragraph}>
+            {props.profile_b.split('\n').map((line, i) => (
+              <div key={i}>
+                {line}
+                <br />
+              </div>
+            ))}
+          </p>
         </div>
       </div>
     </div>

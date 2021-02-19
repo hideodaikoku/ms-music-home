@@ -1,27 +1,33 @@
 import React from "react";
 import Layout from "../layout/layout";
-import { useStaticQuery, graphql } from "gatsby";
+import ComingSoonComponent from "../components/coming-soon";
 
-import Article from "../components/article";
-import Img from "gatsby-image";
-import newsStyles from "../styles/pages/news.module.scss";
-import newsData from "../data/news.json";
+// uncomment the following for implementing news
+// import Article from "../components/article";
+// import { useStaticQuery, graphql } from "gatsby";
+// import Img from "gatsby-image";
+// import newsStyles from "../styles/pages/news.module.scss";
+// import newsData from "../data/news.json";
 
 const News = (props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      top: file(relativePath: { eq: "blue-texture.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-  const articleData = newsData.slice(0).reverse();
+  // uncomment the following for implementing events
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     top: file(relativePath: { eq: "blue-texture.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 600) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+  // const articleData = newsData.slice(0).reverse();
   return (
     <Layout>
+      <ComingSoonComponent/>
+      {/* 
+      // uncomment the following for implementing news
       <div className={newsStyles.container}>
         <div className={newsStyles.topSection}>
           <h2 className={newsStyles.titleLarge}>News</h2>
@@ -54,7 +60,7 @@ const News = (props) => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };

@@ -1,26 +1,29 @@
 import React from "react";
-import { useStaticQuery,　graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import headerStyles from "../styles/layout/header.module.scss";
 
 const Header = (props) => {
   const data = useStaticQuery(graphql`
-  query{
-    logo: file(relativePath: {eq: "moonshot-logo.png"}){
-      childImageSharp {
-        fluid(maxWidth: 1080){
-          ...GatsbyImageSharpFluid
+    query {
+      logo: file(relativePath: { eq: "moonshot-logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1080) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
-  }
-  `)
+  `);
 
   return (
     <div>
       <nav className={headerStyles.nav}>
         <Link className={headerStyles.siteTitle} to="/">
-          <Img fluid={data.logo.childImageSharp.fluid} className={headerStyles.logo}/>
+          <Img
+            fluid={data.logo.childImageSharp.fluid}
+            className={headerStyles.logo}
+          />
         </Link>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.listItem}>
@@ -51,7 +54,7 @@ const Header = (props) => {
             </Link>
           </li>
           <li className={headerStyles.listItem}>
-          <Link
+            <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
               to="/events"
@@ -59,7 +62,7 @@ const Header = (props) => {
               イベント
             </Link>
           </li>
-          {/* <li className={headerStyles.listItem}>
+          <li className={headerStyles.listItem}>
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
@@ -67,15 +70,29 @@ const Header = (props) => {
             >
               調査
             </Link>
-          </li> */}
+          </li>
           <li className={headerStyles.listItem}>
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
               to="/team"
             >
-              メンバー
+              チーム
             </Link>
+          </li>
+          <li className={headerStyles.listItem}>
+            <Link
+              className={headerStyles.link}
+              activeClassName={headerStyles.activeNavItem}
+              to="/survey"
+            >
+              アンケート参加
+            </Link>
+            {/* 
+            // replace with a link to the actual survey
+            <a href="#" target="_blank" rel="noopener noreerrer" alt="Qualtrics Survey">
+              アンケート
+            </a> */}
           </li>
           <li className={headerStyles.listItem}>
             <Link

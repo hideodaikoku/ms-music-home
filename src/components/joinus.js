@@ -6,7 +6,8 @@ const JoinUsComponent = () => {
   return (
     <div className={landingStyles.container}>
       <div className={landingStyles.textOverlay}>
-        <h2 className={landingStyles.titleLargeBlue}>Contact</h2>
+        <h3 className={landingStyles.titleLargeBlue}>Contact Us</h3>
+        <p className={landingStyles.desc}>私たちの取り組みについてのお問合せは、下記のリンクからお問い合わせください。</p>
         <Link to="/join-us" className={landingStyles.link}>
           [ READ MORE
           <svg
@@ -16,7 +17,7 @@ const JoinUsComponent = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M0 17H60L47.234 1" stroke="#015C99" stroke-width="2" />
+            <path d="M0 17H60L47.234 1" stroke="#015C99" strokeWidth="2" />
           </svg>
           ]
         </Link>

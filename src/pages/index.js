@@ -7,6 +7,7 @@ import NewsComponent from "../components/news";
 import EventComponent from "../components/event";
 import JoinUsComponent from "../components/joinus";
 import TeamComponent from "../components/team";
+import SurveyComponent from "../components/survey";
 
 const IndexPage = () => {
   return (
@@ -16,8 +17,9 @@ const IndexPage = () => {
       <AboutComponent/>
       <NewsComponent/>
       <EventComponent/>
-      <JoinUsComponent/>
+      <SurveyComponent/>
       <TeamComponent/>
+      <JoinUsComponent/>
     </Layout>
   );
 };

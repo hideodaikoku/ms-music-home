@@ -1,100 +1,139 @@
-$blue: #015C99;
-.container{
-    margin: 0 auto;
-    padding: 0;
-    max-width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    .text-overlay{
-        margin: 10rem auto 10rem 0;
-        padding-left: 3rem;
-        z-index: 1;
-        .title{
-            font-family: 'YuGothic', sans-serif;
-            font-weight: 500;
-            font-size: 3rem;
-            max-width: 24rem;
-            margin-bottom: 3rem;
-            color: $blue;
-        }
-        .title-large{
-            font-family: 'futura-pt', sans-serif;
-            font-weight: 500;
-            font-size: 5rem;
-            margin-bottom: 3rem;
-            text-transform: uppercase;
-            color: white;   
-        }
-        .title-large-blue{
-            font-family: 'futura-pt', sans-serif;
-            font-weight: 500;
-            font-size: 5rem;
-            margin-bottom: 3rem;
-            text-transform: uppercase;
-            color: $blue;
-        }
-        .subtext{
-            font-family: 'YuGothic', sans-serif;
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 1rem;
-            margin-bottom: 3rem;
-            color: $blue;
-        }
-
-        .subtext-white{
-            font-family: 'YuGothic', sans-serif;
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 1rem;
-            margin-bottom: 3rem;
-            color: white;
-        }
-        .link{
-            text-decoration: none;
-            color: $blue;
-            font-size: .8rem;
-            line-height: 1rem;
-            transition: .2s ease-in;
-            svg{
-                margin-left: 1rem;
-                margin-right: 1rem;
-                height: .8rem;
-            }
-        }
-        .link-white{
-            text-decoration: none;
-            color: white;
-            font-size: .8rem;
-            line-height: 1rem;
-            transition: .2s ease-in;
-            svg{
-                margin-left: 1rem;
-                margin-right: 1rem;
-                height: .8rem;
-                stroke: white;
-            }
-        }
-        .link:hover{
-            font-size: .95rem;
-            opacity: 70%;
-        }
-
-        .link-white:hover{
-            font-size: .95rem;
-            opacity: 70%;
-        }
+$blue: #015c99;
+@import "../../styles/typography.css";
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  .text-overlay {
+    margin: 10rem auto 10rem 0;
+    padding-left: 3rem;
+    z-index: 1;
+    .title {
+      font-family: "YuGothic", sans-serif;
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      padding-right: 3rem;
+      color: $blue;
     }
+    .title-large {
+      font-family: "futura-pt", sans-serif;
+      font-weight: 500;
+      font-size: 5rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      color: white;
+    }
+    .title-large-blue {
+      font-family: "futura-pt", sans-serif;
+      font-weight: 500;
+      font-size: 5rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      color: $blue;
+    }
+    .subtext {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 2rem;
+      max-width: 80vw;
+      padding-right: 3rem;
+      line-height: 3rem;
+      margin-bottom: 1.5rem;
+      color: black;
+    }
+
+    .subtext-white {
+      font-family: "YuGothic", sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-bottom: 3rem;
+      color: white;
+    }
+    .desc {
+      font-family: sans-serif;
+      max-width: 80vw;
+      font-weight: 500;
+      padding-right: 3rem;
+    }
+    .link {
+      text-decoration: none;
+      color: $blue;
+      font-size: 0.8rem;
+      line-height: 1rem;
+      transition: 0.2s ease-in;
+      svg {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 0.8rem;
+      }
+    }
+    .link-white {
+      text-decoration: none;
+      color: white;
+      font-size: 0.8rem;
+      line-height: 1rem;
+      transition: 0.2s ease-in;
+      svg {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 0.8rem;
+        stroke: white;
+      }
+    }
+    .link:hover {
+      font-size: 0.95rem;
+    }
+
+    .link-white:hover {
+      font-size: 0.95rem;
+    }
+
+    .image-container{
+        width: 10rem;
+        margin: 0;
+        .image{
+          object-fit: cover;
+          img{
+            animation: rotate 3s linear infinite;
+          }
+        }
+        
+    }
+  }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 
 @media only screen and (min-width: 781px) {
-    .container{
-        height: 60vh;
-        .text-overlay{
-            margin: 8rem auto 8rem 8rem;
-        }
+  .container {
+    height: 60vh;
+    .text-overlay {
+      margin: 8rem auto 8rem 8rem;
+      .title {
+        font-size: 4rem;
+      }
+      .subtext {
+        max-width: 32rem;
+      }
+      .desc {
+        max-width: 43rem;
+      }
     }
+    .image-container{
+        margin: 0 auto;
+    }
+  }
 }

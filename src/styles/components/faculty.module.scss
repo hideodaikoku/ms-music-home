@@ -1,3 +1,5 @@
+@import "../../styles/typography.css";
+
 $blue: #015C99;
 .faculty-member{
     display: flex;
@@ -44,6 +46,7 @@ $blue: #015C99;
             .paragraph{
                 margin-bottom: 1rem;
                 font-weight: 500;
+                font-size: .8rem;
             }
         }
     }   
@@ -54,8 +57,24 @@ $blue: #015C99;
         flex-direction: row;
         align-items: top;
         .profile-container{
-            min-width: 25rem;
+            min-width: 20rem;
             margin-right: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .faculty-member{
+        .text{
+            .bio{
+                flex-direction: row;
+                .paragraph{
+                    width: 45%;
+                }
+                .paragraph+.paragraph{
+                    margin-left: 1rem;
+                }
+            }
         }
     }
 }

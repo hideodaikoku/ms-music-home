@@ -1,3 +1,5 @@
+$blue: #015c99;
+
 .container {
   border-radius: 5px;
   padding: 20px;
@@ -10,6 +12,16 @@
       text-transform: uppercase;
       text-align: center;
       color: black;   
+    }
+    .caution{
+      max-width: 60vw;
+      margin: 0 auto 3rem auto;
+      li{
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: .7rem;
+        line-height: 1rem;
+      }
     }
     .form-container{
       max-width: 60vw;
@@ -46,7 +58,7 @@
       
       
       .submit{
-        background-color: #015c99;
+        background-color: $blue;
         border: none;
         color: white;
         border-radius: .6rem;
@@ -61,8 +73,11 @@
     .title-large{
       font-size: 5rem;
     }
+    .caution{
+      max-width: 40vw;
+    }
     .form-container{
-      max-width: 30vw;
+      max-width: 40vw;
     }
   }
 }

@@ -14,7 +14,6 @@ const Team = () => {
     <Layout>
       <div className={teamStyles.container}>
         <div className={teamStyles.topSection}>
-          <h2 className={teamStyles.titleLarge}>Members</h2>
           <div className={teamStyles.faculty}>
             {facultyData.map((faculty, key) => (
               <Faculty

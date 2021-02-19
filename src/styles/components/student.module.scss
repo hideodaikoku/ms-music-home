@@ -1,4 +1,6 @@
 $blue: #015C99;
+@import "../../styles/typography.css";
+
 .student-member{
     display: flex;
     flex-direction: column;
@@ -14,7 +16,7 @@ $blue: #015C99;
             font-weight: 500;
         }
         .image-container{
-            max-width: 20rem;
+            max-width: 90vw;
         }
     }
     .text{
@@ -39,6 +41,7 @@ $blue: #015C99;
             .paragraph{
                 margin-bottom: 1rem;
                 font-weight: 500;
+                font-size: .8rem;
             }
         }
     }   
@@ -49,8 +52,11 @@ $blue: #015C99;
         flex-direction: row;
         align-items: top;
         .profile-container{
-            min-width: 25rem;
+            min-width: 20rem;
             margin-right: 2rem;
+        }
+        .text{
+            max-width: 20rem;
         }
     }
 }

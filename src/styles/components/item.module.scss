@@ -4,11 +4,13 @@ $dark: #5344a9;
 $orange: #f47f6b;
 $pink: #bb5098;
 $black: #2c2f33;
+@import "../../styles/typography.css";
 
 .card {
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
+  margin: 0 auto;
+  padding: 1rem;
   width: 90vw;
   border-radius: 0.5rem;
   justify-content: center;
@@ -20,7 +22,7 @@ $black: #2c2f33;
       text-align: center;
     }
     .card-desc {
-      font-family: "YuGothic";
+      font-family: sans-serif;
       font-weight: 100;
       color: $black;
       margin-bottom: 0.2rem;
@@ -35,7 +37,7 @@ $black: #2c2f33;
       height: 100%;
       object-fit: cover;
       img {
-        animation: rotate 3s ease infinite;
+        animation: rotate 3s linear infinite;
       }
     }
   }
