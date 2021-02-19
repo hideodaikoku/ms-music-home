@@ -9,7 +9,7 @@ const EventComponent = () => {
     <div className={landingStyles.container+" "+eventStyles.background}>
       <div className={landingStyles.textOverlay}>
         <h2 className={landingStyles.titleLargeBlue}>Event</h2>
-        <Link to="/event" className={landingStyles.link}>
+        <Link to="/events" className={landingStyles.link}>
           [ READ MORE
           <svg
             width="63"
