@@ -28,6 +28,8 @@ const Team = () => {
               />
             ))}
           </div>
+
+          <div className={teamStyles.separator}>{" "}</div>
           <h1 style={{fontSize:"3rem",fontWeight:500}}>
             学生有志チーム
           </h1>

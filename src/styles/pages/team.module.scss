@@ -12,6 +12,11 @@
       color: black;
     }
   }
+  .separator{
+    height: .1rem;
+    background-color: rgb(68, 68, 68);
+    margin-bottom: 10rem;
+  }
   .student-members{
     display: flex;
     flex-direction: row;
