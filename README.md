@@ -10,12 +10,12 @@ Home Page for Keio SFC's Moonshot Project.
 - [x] Layout fixes
 - [x] Members
 - [x] Contact form
-- [ ] Footer
+- [x] Footer
 - [ ] Privacy Policy
 - [ ] Terms and Conditions
 - [ ] Netlify CMS
 - [ ] Google Analytics
-- [ ] SCSS Cleanup
+- [x] SCSS Cleanup
 
 ## Install dependencies
 

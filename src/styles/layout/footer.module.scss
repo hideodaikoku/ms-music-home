@@ -1,7 +1,31 @@
-@import "../../styles/typography.css";
 
 .container{
     display: flex;
+    flex-direction: column;
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .list-item{
+            list-style-type: none;
+            .link{
+                font-size: .8rem;
+                line-height: 1rem;
+                font-family: sans-serif;
+                color: black;
+                text-decoration: none;
+                cursor: pointer
+            }
+            .link:hover{
+                font-size: .9rem;
+                transition: font-size .2s;
+            }
+        }
+        .list-item+.list-item{
+            padding-left: 1rem;
+        }
+    }
     .copyright{
         margin: 0 auto;
     }
