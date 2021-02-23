@@ -2,9 +2,10 @@
 
 .background{
     background-image: url('../../images/ticket.png');
-    background-size: 100% 50vh;
+    background-size: 100% 100%;
     background-attachment: scroll;
     background-repeat: no-repeat; 
     background-position: top;
     margin: 2rem auto;
+    min-height: 35rem;
 }
