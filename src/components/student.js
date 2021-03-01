@@ -13,7 +13,14 @@ const Student = (props) => {
             }
           }
         }
-        leo: file(relativePath: { eq: "students/leo.png" }) {
+        leo: file(relativePath: { eq: "students/leo.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1080) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        komine: file(relativePath: { eq: "students/komine.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1080) {
               ...GatsbyImageSharpFluid

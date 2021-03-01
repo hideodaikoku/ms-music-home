@@ -1,18 +1,9 @@
 [
   {
-    "id": "tanaka",
-    "image": "tanaka",
-    "name": "田中堅大",
-    "position": "慶應義塾大学大学院政策・メディア研究科",
-    "responsibility": "テクノロジーサーベイ",
-    "leader": "TRUE",
-    "profile": "1993年、東京都生まれ。ギタリスト／都市音楽家（Urban Composer）。都市論を音楽／サウンドアート制作に応用することで、都市を主題に音を紡ぐ「都市作曲（Urban Composition）」の確立を模索している。European Postgraduate in Arts in Soundにて、ベルギー・オランダ・フランスを巡りサウンドアートを研究したのち、個展として、都市の記憶を回想するサウンドインスタレーション「Urban Reminiscence——Sound, Object, and Rhythm」Sta.・東京（2020）を開催。主な展示作品に「Algorithmic Urban Composition」スタンフォード大学コンピューター音楽音響技術研究施設聴取室（2019）など。音楽を取り巻く環境への批評zine『jingle』の出版、蓮沼執太フルフィルへの参加、ファッション／ダンス／映像作品への音楽提供など、音楽を中心として多岐に渡る活動を展開。"
-  },
-  {
     "id": "honda",
     "image": "honda",
-    "name": "本多栞",
-    "position": "慶應義塾大学大学院 医学研究科 博士課程1年",
+    "name": "本多 栞",
+    "position": "慶應義塾大学大学院 医学研究科",
     "responsibility": "アンケート",
     "leader": "TRUE",
     "profile": "精神・神経科学教室、神経病態生理学研究室所属。学士課程はマウスの聴覚刺激誘発型の感情変化を音声分析する研究に従事。修士課程より精神疾患患者の病態生理や病態と音楽能力の関連についてMRスペクトロスコピーや脳構造・機能画像法を用いて検討。2021年4月より日本学術振興会特別研究員（DC1）。"
@@ -20,20 +11,38 @@
   {
     "id": "sakamoto",
     "image": "sakamoto",
-    "name": "坂本嵩",
+    "name": "坂本 嵩",
     "position": "慶應義塾大学大学院 政策・メディア研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "TRUE",
     "profile": "1998年生まれ。慶應義塾大学環境情報学部（飛び級卒業）を経て、慶應義塾大学大学院政策・メディア研究科に在籍中（GAOスカラシップにより学費全額免除）。ソニーコンピューターサイエンス研究所インターン生、元NTTコミュニケーション科学基礎研究所実習生。\n高校在学時にチャイコフスキーの旋律と和音進行に心を惹かれ、主観的でありながらも普遍的である「感動」の正体を探るためSFCに入学。「音楽で感動を増やす」ことを最終目標に、感動を神経生理学的に定義づける研究に取り組んでいる。\n今はイカの塩辛とサカナクションとシルビウス溝が好き。"
   },
   {
+    "id": "tanaka",
+    "image": "tanaka",
+    "name": "田中 堅大",
+    "position": "慶應義塾大学大学院 政策・メディア研究科",
+    "responsibility": "テクノロジーサーベイ",
+    "leader": "TRUE",
+    "profile": "1993年、東京都生まれ。ギタリスト／都市音楽家（Urban Composer）。都市論を音楽／サウンドアート制作に応用することで、都市を主題に音を紡ぐ「都市作曲（Urban Composition）」の確立を模索している。European Postgraduate in Arts in Soundにて、ベルギー・オランダ・フランスを巡りサウンドアートを研究したのち、個展として、都市の記憶を回想するサウンドインスタレーション「Urban Reminiscence——Sound, Object, and Rhythm」Sta.・東京（2020）を開催。主な展示作品に「Algorithmic Urban Composition」スタンフォード大学コンピューター音楽音響技術研究施設聴取室（2019）など。音楽を取り巻く環境への批評zine『jingle』の出版、蓮沼執太フルフィルへの参加、ファッション／ダンス／映像作品への音楽提供など、音楽を中心として多岐に渡る活動を展開。"
+  },
+  {
     "id": "samma",
     "image": "samma",
-    "name": "三摩朋弘",
-    "position": "慶應義塾大学環境情報学部",
+    "name": "三摩 朋弘",
+    "position": "慶應義塾大学 環境情報学部",
     "responsibility": "ワークショップ",
     "leader": "TRUE",
     "profile": "1997年生まれ。慶應義塾大学環境情報学部在学。幼少期からエレクトーンとドラムを始め、10歳で出会った吹奏楽にのめりこみ今に至る。「吹奏楽の科学的研究」に強い意欲を持ち、現在は吹奏楽コンクールの審査に演奏者の見た目が与える影響について研究を進めている。川崎フロンターレとバンコクが好き。"
+  },
+  {
+    "id": "komine",
+    "image": "komine",
+    "name": "小嶺 美月",
+    "position": "慶應義塾大学 総合政策学部",
+    "responsibility": "アンケート",
+    "leader": "TRUE",
+    "profile": "1997年生まれ。慶應義塾大学総合政策学部在学中。幼少期からバイオリンを始め、大学のオーケストラでコンサートミストレスを務める中で演奏者の身体性や同期性に興味を持ち、音楽研究の道に進む。現在は、音楽家に多く見られる局所性ジストニアの発症要因、神経メカニズムを解明すべく研究に取り組んでいる。ブラームス、お肉、パフェが好き。"
   },
   {
     "id": "leo",
@@ -57,7 +66,7 @@
     "id": "sotaro",
     "image": "sotaro",
     "name": "近藤聡太郎",
-    "position": "東京大学大学院総合文化研究科広域科学専攻（岡ノ谷研究室）",
+    "position": "東京大学大学院 総合文化研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
     "profile": ""
@@ -66,7 +75,7 @@
     "id": "jun",
     "image": "jun",
     "name": "仁田純",
-    "position": "東京大学大学院総合文化研究科",
+    "position": "東京大学大学院 総合文化研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
     "profile": ""
@@ -75,7 +84,7 @@
     "id": "haruka",
     "image": "haruka",
     "name": "近藤はるか",
-    "position": "慶應義塾大学大学院 政策・メディア研究科 修士課程 1年",
+    "position": "慶應義塾大学大学院 政策・メディア研究科",
     "responsibility": "ワークショップ",
     "leader": "FALSE",
     "profile": ""
@@ -102,7 +111,7 @@
     "id": "nakahara",
     "image": "nakahara",
     "name": "中原知美",
-    "position": "慶應義塾大学医学部",
+    "position": "慶應義塾大学 医学部",
     "responsibility": "サイエンスサーベイ, ワークショップ",
     "leader": "FALSE",
     "profile": ""
@@ -120,9 +129,37 @@
     "id": "sakakibara",
     "image": "sakakibara",
     "name": "榊原佑奈",
-    "position": "慶応義塾大学総合政策学部",
+    "position": "慶應義塾大学 総合政策学部",
     "responsibility": "アンケート, ワークショップ",
     "leader": "FALSE",
     "profile": ""
+  },
+  {
+    "id": "koshiishi",
+    "image": "koshiishi",
+    "name": "輿石りせる",
+    "position": "東京大学大学院 総合文化研究科",
+    "responsibility": "サイエンスサーベイ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "miyachi",
+    "image": "miyachi",
+    "name": "宮地育",
+    "position": "慶應義塾大学 医学部",
+    "responsibility": "テクノロジーサーベイ",
+    "leader": "FALSE",
+    "profile": ""
+  },
+  {
+    "id": "hondou",
+    "image": "hondou",
+    "name": "本藤伸章",
+    "position": "慶應義塾大学 医学部",
+    "responsibility": "サイエンスサーベイ",
+    "leader": "FALSE",
+    "profile": ""
   }
+  
 ]

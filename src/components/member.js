@@ -76,6 +76,27 @@ const Member = (props) => {
             }
           }
         }
+        koshiishi: file(relativePath: { eq: "students/koshiishi.jpeg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1080) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        miyachi: file(relativePath: { eq: "students/miyachi.jpeg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1080) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        hondou: file(relativePath: { eq: "students/hondou.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1080) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
   `);
   return (

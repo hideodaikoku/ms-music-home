@@ -31,7 +31,7 @@ const Team = () => {
 
           <div className={teamStyles.separator}>{" "}</div>
           <h1 style={{fontSize:"3rem",fontWeight:500}}>
-            学生有志チーム
+            学生協力者
           </h1>
           <p style={{color:"gray", fontWeight:500}}> 慶応義塾大学 学生有志・東京大学 学生有志</p>
           <div className={teamStyles.studentLeaders}>
@@ -47,7 +47,7 @@ const Team = () => {
               />
             ))}
           </div>
-          <h2 style={{fontSize:"2rem",fontWeight:200}}>チームメンバーー</h2>
+          <h2 style={{fontSize:"2rem",fontWeight:200}}>チームメンバー</h2>
           <div className={teamStyles.studentMembers}>
             {memberData.map((student, i) => (
               <Member
