@@ -35,7 +35,7 @@ const Message = () => {
             この理念の実現のための方策を、神経科学・生物心理学・情報科学に加え、他の自然科学、人文・社会科学や医学、宇宙科学の研究者や有識者のチームを構成し、一丸となって検討していきます。また、社会をより良くするために、研究者や専門家だけでなく、社会全体で考えるための活動を展開していきます。
           </p>
 
-          <h3 className={messageStyles.byline}>MS音楽感動共創プロジェク<br></br>チーム一同</h3>
+          <h3 className={messageStyles.byline}>MS音楽感動共創プロジェクト<br></br>チーム一同</h3>
         </section>
         <div className={messageStyles.imageSection}>
           <Image fluid={data.file.childImageSharp.fluid} />

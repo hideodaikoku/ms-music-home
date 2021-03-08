@@ -2,7 +2,7 @@
   {
     "id": "honda",
     "image": "honda",
-    "name": "本多 栞",
+    "name": "本多　栞",
     "position": "慶應義塾大学大学院 医学研究科",
     "responsibility": "アンケート",
     "leader": "TRUE",
@@ -11,7 +11,7 @@
   {
     "id": "sakamoto",
     "image": "sakamoto",
-    "name": "坂本 嵩",
+    "name": "坂本　嵩",
     "position": "慶應義塾大学大学院 政策・メディア研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "TRUE",
@@ -20,7 +20,7 @@
   {
     "id": "tanaka",
     "image": "tanaka",
-    "name": "田中 堅大",
+    "name": "田中　堅大",
     "position": "慶應義塾大学大学院 政策・メディア研究科",
     "responsibility": "テクノロジーサーベイ",
     "leader": "TRUE",
@@ -29,7 +29,7 @@
   {
     "id": "samma",
     "image": "samma",
-    "name": "三摩 朋弘",
+    "name": "三摩　朋弘",
     "position": "慶應義塾大学 環境情報学部",
     "responsibility": "ワークショップ",
     "leader": "TRUE",
@@ -38,7 +38,7 @@
   {
     "id": "komine",
     "image": "komine",
-    "name": "小嶺 美月",
+    "name": "小嶺　美月",
     "position": "慶應義塾大学 総合政策学部",
     "responsibility": "アンケート",
     "leader": "TRUE",
@@ -56,7 +56,7 @@
   {
     "id": "ozaki",
     "image": "ozaki",
-    "name": "尾崎 雄人",
+    "name": "尾崎　雄人",
     "position": "慶應義塾大学大学院 政策・メディア研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
@@ -65,7 +65,7 @@
   {
     "id": "sotaro",
     "image": "sotaro",
-    "name": "近藤聡太郎",
+    "name": "近藤　聡太郎",
     "position": "東京大学大学院 総合文化研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
@@ -74,7 +74,7 @@
   {
     "id": "jun",
     "image": "jun",
-    "name": "仁田純",
+    "name": "仁田　純",
     "position": "東京大学大学院 総合文化研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
@@ -83,7 +83,7 @@
   {
     "id": "haruka",
     "image": "haruka",
-    "name": "近藤はるか",
+    "name": "近藤　はるか",
     "position": "慶應義塾大学大学院 政策・メディア研究科",
     "responsibility": "ワークショップ",
     "leader": "FALSE",
@@ -92,7 +92,7 @@
   {
     "id": "miku",
     "image": "miku",
-    "name": "藤本未来",
+    "name": "藤本　未来",
     "position": "慶應義塾大学大学・環境情報学部",
     "responsibility": "アンケート",
     "leader": "FALSE",
@@ -101,7 +101,7 @@
   {
     "id": "bando",
     "image": "bando",
-    "name": "板東央矩",
+    "name": "板東　央矩",
     "position": "慶應大学医学部 精神・神経科",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
@@ -110,7 +110,7 @@
   {
     "id": "nakahara",
     "image": "nakahara",
-    "name": "中原知美",
+    "name": "中原　知美",
     "position": "慶應義塾大学 医学部",
     "responsibility": "サイエンスサーベイ, ワークショップ",
     "leader": "FALSE",
@@ -119,7 +119,7 @@
   {
     "id": "homma",
     "image": "homma",
-    "name": "本間咲希",
+    "name": "本間　咲希",
     "position": "慶應義塾大学環境情報学部",
     "responsibility": "アンケート",
     "leader": "FALSE",
@@ -128,7 +128,7 @@
   {
     "id": "sakakibara",
     "image": "sakakibara",
-    "name": "榊原佑奈",
+    "name": "榊原　佑奈",
     "position": "慶應義塾大学 総合政策学部",
     "responsibility": "アンケート, ワークショップ",
     "leader": "FALSE",
@@ -137,7 +137,7 @@
   {
     "id": "koshiishi",
     "image": "koshiishi",
-    "name": "輿石りせる",
+    "name": "輿石　りせる",
     "position": "東京大学大学院 総合文化研究科",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
@@ -146,7 +146,7 @@
   {
     "id": "miyachi",
     "image": "miyachi",
-    "name": "宮地育",
+    "name": "宮地　育",
     "position": "慶應義塾大学 医学部",
     "responsibility": "テクノロジーサーベイ",
     "leader": "FALSE",
@@ -155,7 +155,7 @@
   {
     "id": "hondou",
     "image": "hondou",
-    "name": "本藤伸章",
+    "name": "本藤　伸章",
     "position": "慶應義塾大学 医学部",
     "responsibility": "サイエンスサーベイ",
     "leader": "FALSE",
