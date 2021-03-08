@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layout/layout";
 import aboutStyles from "../styles/pages/about.module.scss";
 import Item from "../components/item";
-import missionData from "../data/mission.json";
+import actionData from "../data/action.json";
 
 const About = () => {
   return (
@@ -12,26 +12,21 @@ const About = () => {
           <h1 className={aboutStyles.vision}>VISION 2050</h1>
           <div className={aboutStyles.subtextJp}>
             <p>
-              私たちは、芸術科学立国を成し遂げ、ムーンショット音楽芸術を地球全体で共創します。
-              全地球生命が一体となり、地球文化の普遍性を宇宙に響鳴させる感動の音楽芸術です。
+              人類全体の幸福と持続可能な社会を実現するために、芸術科学立国を成し遂げ、2050年に地球文化の普遍性を宇宙に響鳴させる感動の音楽芸術を実現します。
             </p>
           </div>
         </div>
         <div className={aboutStyles.explanation}>
           <div className={aboutStyles.paragraph}>
-            私たちが描く２０５０年への社会像は全地球人が利他の志に胸躍らせながら、ムーンショット音楽芸術祭の開催を目指して、超越感動芸術創造のために一丸となって科学技術開発を行う姿である。
-            その先導を日本が切り拓く。
+            私たちが描く2050年への社会像は、全地球人が利他の志に胸躍らせながら、ムーンショット音楽芸術祭の開催を目指して一丸となっている姿です。私たちのプロジェクトでは、この社会像を現実のものにする科学技術を、日本が先導し切り拓くための道筋を検討しています。
           </div>
           <div className={aboutStyles.paragraph}>
-            具体的な数値目標として、２０５０
-            年までに日本の音楽科学研究の生産性を現在よりも１４倍以上向上させ、音楽科学分野の学術論文数において日本が世界第１位となり、世界トップの音楽科学技術大国になる。
-            その研究成果によって、２０５０
-            年の社会で以下つの科学技術を実現します。
+            すべてのひとが享受し発信できる感動芸術「超越感動芸術」の創出を目指します。これによって、ポストコロナ時代における人々の豊かな創造性、感性、表現力、共感、相互理解、人間性を存分に涵養させ、人類社会の持続と幸福を可能にすると信じています。そのために、次の4つの観点から現存の科学技術を体系づけ、新たな方針を示すロードマップを作成しています。
           </div>
         </div>
       </div>
       <div className={aboutStyles.cards}>
-        {missionData.map((obj) => (
+        {actionData.map((obj) => (
           <Item
             key={obj.index}
             title={obj.title}
