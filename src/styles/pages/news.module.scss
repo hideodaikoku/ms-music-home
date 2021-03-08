@@ -1,54 +1,54 @@
-.container{
-    .top-section{
-        width: 70vw;
-        margin: 5rem auto;
-        .title-large{
-            font-family: 'futura-pt', sans-serif;
-            font-weight: 500;
-            font-size: 4rem;
-            margin-bottom: 3rem;
-            text-transform: uppercase;
-            text-align: center;
-            color: black;   
-        }
-        .image-container{
-            margin-bottom: 5rem;
-            .image{
-                margin-bottom: .5rem;
-            }
-            .copyright{
-                float: right;
-                text-align: right;
-            }
-            .title-text{
-                font-family: 'futura-pt';
-                font-size: 2rem;
-                font-weight: 500;
-                margin: 2rem auto 1rem auto;
-                .latest{
-                    font-family: 'futura-pt';
-                    text-transform: uppercase;
-                }
-            }
-            .date{
-                margin: 1rem auto;
-            }
-        }
+.container {
+  .top-section {
+    width: 70vw;
+    margin: 5rem auto;
+    .title-large {
+      font-family: "futura-pt", sans-serif;
+      font-weight: 500;
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;
     }
-    .articles{
-        display: flex;
-        justify-content: left;
-        flex-wrap: wrap;
-        width: 70vw;
+    .image-container {
+      margin-bottom: 5rem;
+      .image {
+        margin-bottom: 0.5rem;
+      }
+      .copyright {
+        float: right;
+        text-align: right;
+      }
+      .title-text {
+        font-family: "futura-pt";
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 2rem auto 1rem auto;
+        .latest {
+          font-family: "futura-pt";
+          text-transform: uppercase;
+        }
+      }
+      .date {
+        margin: 1rem auto;
+      }
     }
+  }
+  .articles {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 70vw;
+  }
 }
 
 @media only screen and (min-width: 781px) {
-    .container{
-        .top-section{
-            .title-large{
-                font-size: 5rem;
-            }
-        }
+  .container {
+    .top-section {
+      .title-large {
+        font-size: 5rem;
+      }
     }
+  }
 }

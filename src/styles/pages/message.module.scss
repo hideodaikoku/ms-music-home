@@ -2,9 +2,9 @@
   color: black;
   display: flex;
   flex-direction: column;
-  .message-section{
-    .message-title{
-      font-family: 'YuGothic', sans-serif;
+  .message-section {
+    .message-title {
+      font-family: "YuGothic", sans-serif;
       font-weight: 500;
       font-size: 2rem;
       line-height: 3rem;
@@ -12,39 +12,39 @@
       max-width: 80vw;
       color: white;
       margin: 3rem auto;
-      background-image: url('../../images/blue-texture.png');
+      background-image: url("../../images/blue-texture.png");
       background-size: contain;
     }
-    .paragraph{
+    .paragraph {
       margin: 1rem auto;
       max-width: 80vw;
       font-family: sans-serif;
       font-weight: 100;
       line-height: 2rem;
     }
-    .byline{
+    .byline {
       margin: 3rem auto;
       max-width: 80vw;
-      font-family: 'YuGothic', sans-serif;
+      font-family: "YuGothic", sans-serif;
       font-weight: 600;
     }
   }
-  .image-section{
+  .image-section {
     margin: 3rem auto;
     width: 80vw;
   }
 }
 
 @media only screen and (min-width: 842px) {
-  .container{
+  .container {
     flex-direction: row;
     padding: 5rem;
     align-items: center;
-    .message-section{
+    .message-section {
       max-width: 40vw;
       position: relative;
     }
-    .image-section{
+    .image-section {
       width: 40vw;
     }
   }

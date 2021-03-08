@@ -95,16 +95,15 @@ $blue: #015c99;
       font-size: 0.95rem;
     }
 
-    .image-container{
-        width: 10rem;
-        margin: 0;
-        .image{
-          object-fit: cover;
-          img{
-            animation: rotate 3s linear infinite;
-          }
+    .image-container {
+      width: 10rem;
+      margin: 0;
+      .image {
+        object-fit: cover;
+        img {
+          animation: rotate 3s linear infinite;
         }
-        
+      }
     }
   }
 }
@@ -124,7 +123,7 @@ $blue: #015c99;
     .text-overlay {
       margin: 8rem auto 8rem 8rem;
       .title {
-        font-size: 4rem;
+        font-size: 5rem;
       }
       .subtext {
         max-width: 32rem;
@@ -133,8 +132,8 @@ $blue: #015c99;
         max-width: 43rem;
       }
     }
-    .image-container{
-        margin: 0 auto;
+    .image-container {
+      margin: 0 auto;
     }
   }
 }
