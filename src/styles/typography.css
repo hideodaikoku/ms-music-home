@@ -1,4 +1,8 @@
 @font-face {
-    font-family: "YuGothic";
-    src: url("../fonts/yugothib.ttf");
-  }
+  font-family: "YuGothic";
+  src: url("../fonts/yugothib.ttf");
+}
+@font-face {
+  font-family: "futura-pt";
+  src: url("../fonts/Futura-Medium-01.ttf");
+}
