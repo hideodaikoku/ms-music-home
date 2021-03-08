@@ -6,21 +6,21 @@ import Img from "gatsby-image";
 const ComingSoonComponent = () => {
   const data = useStaticQuery(graphql`
     query {
-        person: file(relativePath: {eq:"red-disk.png"}){
+        sense: file(relativePath: {eq:"red-disk.png"}){
             childImageSharp {
                 fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
         }
-        society: file(relativePath: {eq:"green-disk.png"}){
+        body: file(relativePath: {eq:"green-disk.png"}){
             childImageSharp {
                 fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
         }
-        earth: file(relativePath: {eq:"orange-disk.png"}){
+        life: file(relativePath: {eq:"orange-disk.png"}){
             childImageSharp {
                 fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
