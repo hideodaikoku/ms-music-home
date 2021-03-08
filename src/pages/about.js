@@ -10,17 +10,6 @@ const About = () => {
       <div className={aboutStyles.container}>
         <div className={aboutStyles.topTitle}>
           <h1 className={aboutStyles.vision}>VISION 2050</h1>
-          <div className={aboutStyles.overlay}>
-            <p id={aboutStyles.top}>
-              We will achieve an arts and sciences nation and co-create the
-              moonshot musical art with the entire earth.
-            </p>
-            <br />
-            <p id={aboutStyles.bottom}>
-              It is an inspiring musical art that unites all life on earth and
-              echoes the universality of earth culture to the universe.
-            </p>
-          </div>
           <div className={aboutStyles.subtextJp}>
             <p>
               私たちは、芸術科学立国を成し遂げ、ムーンショット音楽芸術を地球全体で共創します。
