@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layout/layout";
 import aboutStyles from "../styles/pages/about.module.scss";
 import Item from "../components/item";
-import actionData from "../data/action.json";
+import missionData from "../data/mission.json";
 
 const About = () => {
   return (
@@ -26,7 +26,7 @@ const About = () => {
         </div>
       </div>
       <div className={aboutStyles.cards}>
-        {actionData.map((obj) => (
+        {missionData.map((obj) => (
           <Item
             key={obj.index}
             title={obj.title}
