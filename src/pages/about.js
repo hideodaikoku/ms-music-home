@@ -37,6 +37,10 @@ const About = () => {
       </div>
       <div className={aboutStyles.container}>
         <div className={aboutStyles.actionTitle}>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
           <h1 className={aboutStyles.action}>ACTION</h1>
           <div className={aboutStyles.subtextJp}>
             <p>
@@ -64,11 +68,6 @@ const About = () => {
           インタビュー：私たちのビジョンとその価値について、著名な芸術家や有識者との議論を展開していきます。
           </div>
         </div>
-      </div>
-
-      <div className={aboutStyles.bottomText}>
-        上記4
-        つの科学技術は、芸術文化が本来持つ本質的価値を大きく引き出し、ポストコロナ時代における人々の豊かな創造性、感性、表現力、共感、相互理解、人間性を存分に涵養させ、人類社会の持続と幸福を可能にする。
       </div>
     </Layout>
   );
