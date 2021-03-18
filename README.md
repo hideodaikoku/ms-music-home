@@ -5,24 +5,26 @@ Home Page for Keio SFC's Moonshot Project.
 [![Netlify Status](https://api.netlify.com/api/v1/badges/875543b0-4049-416d-b8ef-e847db5ac252/deploy-status)](https://app.netlify.com/sites/friendly-brahmagupta-8b92ff/deploys)
 
 ## TODO
+
+(Now being taken care of at Notion Doc)
+
 - [x] Top Page
 - [x] Header
 - [x] Layout fixes
 - [x] Members
 - [x] Contact form
 - [x] Footer
-- [ ] Privacy Policy
-- [ ] Terms and Conditions
+- [x] SCSS Cleanup
 - [ ] Netlify CMS
 - [ ] Google Analytics
-- [x] SCSS Cleanup
+- [ ] Privacy Policy
+- [ ] Terms and Conditions
 
 ## Install dependencies
 
 `npm install`
 
 ## 🚀 Quick start
-
 
 1.  **Start developing.**
 
@@ -43,15 +45,12 @@ Home Page for Keio SFC's Moonshot Project.
 
     `git push`
 
-   
-3.   **Writing Posts**
+3.  **Writing Posts**
 
     Posts can be added using Netlify CMS
-    
-    
+
 4.  ** Contact Forms **
     https://www.gatsbyjs.com/docs/building-a-contact-form/#run-your-own-server
-
 
 5.  **Learn more**
 
