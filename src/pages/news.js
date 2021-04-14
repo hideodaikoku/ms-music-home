@@ -1,33 +1,44 @@
 import React from "react";
 import Layout from "../layout/layout";
-import ComingSoonComponent from "../components/coming-soon";
 
 // uncomment the following for implementing news
-// import Article from "../components/article";
-// import { useStaticQuery, graphql } from "gatsby";
-// import Img from "gatsby-image";
-// import newsStyles from "../styles/pages/news.module.scss";
-// import newsData from "../data/news.json";
+import Article from "../components/article";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import newsStyles from "../styles/pages/news.module.scss";
+
 
 const News = (props) => {
   // uncomment the following for implementing events
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     top: file(relativePath: { eq: "blue-texture.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 600) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
+  const data = useStaticQuery(graphql`
+    query {
+      top: file(relativePath: { eq: "blue-texture.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      posts: allMarkdownRemark{
+        edges{
+          node{
+            frontmatter{
+              title
+              date
+              category
+            }
+            excerpt
+          }
+        }
+      }
+    }
+  `);
   // const articleData = newsData.slice(0).reverse();
+  const articleData = data.posts.edges;
+  console.log(articleData);
   return (
     <Layout>
-      <ComingSoonComponent/>
-      {/* 
-      // uncomment the following for implementing news
+      {/* uncomment the following for implementing news */}
       <div className={newsStyles.container}>
         <div className={newsStyles.topSection}>
           <h2 className={newsStyles.titleLarge}>News</h2>
@@ -41,26 +52,26 @@ const News = (props) => {
             </small>
             <h2 className={newsStyles.titleText}>
               <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span>
+              <strong className={newsStyles.latest}> {articleData[0].node.frontmatter.title} </strong>
               
-              <strong className={newsStyles.latest}>ニュース</strong>
-              {articleData[0].title}
             </h2>
-            <small className={newsStyles.date}>{articleData[0].date}</small>
-            <div className={newsStyles.desc}>{articleData[0].desc}</div>
+            <small className={newsStyles.date}>{articleData[0].node.frontmatter.date}</small>
+            <div className={newsStyles.desc}>{articleData[0].node.excerpt}</div>
           </div>
           <div className={newsStyles.articles}>
             {articleData.map((obj) => (
               <Article
-                key={obj.index}
-                title={obj.title}
-                date={obj.date}
-                desc={obj.desc}
-                index={obj.index}
+                key={obj.node.frontmatter.index}
+                title={obj.node.frontmatter.title}
+                date={obj.node.frontmatter.date}
+                desc={obj.node.frontmatter.exceprt}
+                
+                index={obj.node.frontmatter.index}
               />
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
     </Layout>
   );
 };

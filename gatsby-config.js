@@ -60,6 +60,15 @@ module.exports = {
         path: `${__dirname}/src/images/students`,
       },
     },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog-posts",
+        path: `${__dirname}/_posts/blog`,
+      },
+    },
+
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     {
