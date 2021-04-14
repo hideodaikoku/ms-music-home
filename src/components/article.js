@@ -1,49 +1,31 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import articleStyles from "../styles/components/article.module.scss";
+import Thumbnail from  "../components/thumbnail";
 
 const Article = (props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      a: file(relativePath: { eq: "earth.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      b: file(relativePath: { eq: "space.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      c: file(relativePath: { eq: "gaia_galaxy.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      d: file(relativePath: { eq: "society.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     a: file(relativePath: { eq:  }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 600) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   const index = props.index;
+  console.log(props.thumbnail)
   return (
     <div className={articleStyles.article}>
       <div className={articleStyles.articleImage}>
-        <Img
-          fluid={data[index].childImageSharp.fluid}
+        {/* <Img
+          fluid={props.thumbnail}
           className={articleStyles.image}
-        />
+        /> */}
+        <Thumbnail path={props.thumbnail} />
+        
       </div>
       <div className={articleStyles.articleText}>
         <h1 className={articleStyles.articleTitle}>{props.title}</h1>

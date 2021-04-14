@@ -26,6 +26,7 @@ const News = (props) => {
               title
               date
               category
+              thumbnail
             }
             excerpt
           }
@@ -35,7 +36,7 @@ const News = (props) => {
   `);
   // const articleData = newsData.slice(0).reverse();
   const articleData = data.posts.edges;
-  console.log(articleData);
+  // console.log(articleData);
   return (
     <Layout>
       {/* uncomment the following for implementing news */}
@@ -65,7 +66,7 @@ const News = (props) => {
                 title={obj.node.frontmatter.title}
                 date={obj.node.frontmatter.date}
                 desc={obj.node.frontmatter.exceprt}
-                
+                thumbnail={obj.node.frontmatter.thumbnail}
                 index={obj.node.frontmatter.index}
               />
             ))}
