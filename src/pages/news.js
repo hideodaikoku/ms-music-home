@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../layout/layout";
+import ReactDOM from "react-dom";
 
 // uncomment the following for implementing news
 import Article from "../components/article";
@@ -13,6 +14,13 @@ const News = (props) => {
   const data = useStaticQuery(graphql`
     query {
       top: file(relativePath: { eq: "blue-texture.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      tempnews: file(relativePath: { eq: "temporary-news-site.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
@@ -34,32 +42,41 @@ const News = (props) => {
       }
     }
   `);
-  // const articleData = newsData.slice(0).reverse();
+
+  // return (
+  //   <Layout>
+  //     <h1>ニュースサイトへ!</h1>
+  //   </Layout>
+  // )
+
+  // // const articleData = newsData.slice(0).reverse();
   const articleData = data.posts.edges;
-  // console.log(articleData);
+  // // console.log(articleData);
   return (
     <Layout>
       {/* uncomment the following for implementing news */}
       <div className={newsStyles.container}>
         <div className={newsStyles.topSection}>
           <h2 className={newsStyles.titleLarge}>News</h2>
-          <div className={newsStyles.imageContainer}>
+          <div className={newsStyles.imageContainer} onClick>
+            <a href="https://sites.google.com/keio.jp/ms-music-news">
             <Img
-              fluid={data.top.childImageSharp.fluid}
+              fluid={data.tempnews.childImageSharp.fluid}
               className={newsStyles.image}
             />
+            </a>
             <small className={newsStyles.copyright}>
               &copy; Hazuki Ota, 2021
             </small>
             <h2 className={newsStyles.titleText}>
-              <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span>
-              <strong className={newsStyles.latest}> {articleData[0].node.frontmatter.title} </strong>
+              {/* <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span> */}
+              {/* <strong className={newsStyles.latest}> {articleData[0].node.frontmatter.title} </strong> */}
               
             </h2>
-            <small className={newsStyles.date}>{articleData[0].node.frontmatter.date}</small>
-            <div className={newsStyles.desc}>{articleData[0].node.excerpt}</div>
+            {/* <small className={newsStyles.date}>{articleData[0].node.frontmatter.date}</small> */}
+            {/* <div className={newsStyles.desc}>{articleData[0].node.excerpt}</div> */}
           </div>
-          <div className={newsStyles.articles}>
+          {/* <div className={newsStyles.articles}>
             {articleData.map((obj) => (
               <Article
                 key={obj.node.frontmatter.index}
@@ -69,8 +86,8 @@ const News = (props) => {
                 thumbnail={obj.node.frontmatter.thumbnail}
                 index={obj.node.frontmatter.index}
               />
-            ))}
-          </div>
+            ))} */}
+          {/* </div> */}
         </div>
       </div>
     </Layout>
