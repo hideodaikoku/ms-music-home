@@ -3,7 +3,7 @@ import Layout from "../layout/layout";
 
 
 // uncomment the following for implementing events
-import Article from "../components/article";
+import ArticleRoll from "../components/ArticleRoll";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import eventStyles from "../styles/pages/events.module.scss";

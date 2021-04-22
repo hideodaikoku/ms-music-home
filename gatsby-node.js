@@ -22,8 +22,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug,
     })
   }
-  fmImagesToRelative(node) // convert image paths for gatsby images
-
+  // fmImagesToRelative(node) // convert image paths for gatsby images
 }
 
 // after creating the slug, you can create pages

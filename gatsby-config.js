@@ -16,6 +16,20 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-offline",
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "uploads",
+        path: `${__dirname}/static/img`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
@@ -29,27 +43,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "uploads-static",
-        path: `${__dirname}/static/img`,
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "faculty-images",
         path: `${__dirname}/src/images/faculty`,
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {

@@ -3,7 +3,7 @@ import Layout from "../layout/layout";
 import ReactDOM from "react-dom";
 
 // uncomment the following for implementing news
-import Article from "../components/article";
+import ArticleRoll from "../components/ArticleRoll";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import newsStyles from "../styles/pages/news.module.scss";
@@ -36,11 +36,14 @@ const News = (props) => {
               category
               thumbnail {
                 childImageSharp {
-                  fixed(width: 300) {
+                  fixed(width: 200) {
                     ...GatsbyImageSharpFixed
                   }
                 }
               }
+            }
+            fields {
+              slug
             }
             excerpt
           }
@@ -79,12 +82,12 @@ const News = (props) => {
           </div>
           <div className={newsStyles.articles}>
             {articleData.map((obj) => (
-              <Article
+              <ArticleRoll
                 key={obj.node.frontmatter.index}
                 title={obj.node.frontmatter.title}
                 date={obj.node.frontmatter.date}
-                desc={obj.node.frontmatter.exceprt}
-                thumbnail={obj.node.frontmatter.thumbnail}
+                desc={obj.node.frontmatter.excerpt}
+                fixed={obj.node.frontmatter.thumbnail.childImageSharp.fixed}
                 index={obj.node.frontmatter.index}
               />
             ))}
