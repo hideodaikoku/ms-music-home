@@ -34,7 +34,13 @@ const News = (props) => {
               title
               date
               category
-              thumbnail
+              thumbnail {
+                childImageSharp {
+                  fixed(width: 300) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
             }
             excerpt
           }
@@ -43,11 +49,6 @@ const News = (props) => {
     }
   `);
 
-  // return (
-  //   <Layout>
-  //     <h1>ニュースサイトへ!</h1>
-  //   </Layout>
-  // )
 
   // // const articleData = newsData.slice(0).reverse();
   const articleData = data.posts.edges;
@@ -69,14 +70,14 @@ const News = (props) => {
               &copy; Hazuki Ota, 2021
             </small>
             <h2 className={newsStyles.titleText}>
-              {/* <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span> */}
-              {/* <strong className={newsStyles.latest}> {articleData[0].node.frontmatter.title} </strong> */}
+              <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span>
+              <strong className={newsStyles.latest}> {articleData[0].node.frontmatter.title} </strong>
               
             </h2>
-            {/* <small className={newsStyles.date}>{articleData[0].node.frontmatter.date}</small> */}
-            {/* <div className={newsStyles.desc}>{articleData[0].node.excerpt}</div> */}
+            <small className={newsStyles.date}>{articleData[0].node.frontmatter.date}</small>
+            <div className={newsStyles.desc}>{articleData[0].node.excerpt}</div>
           </div>
-          {/* <div className={newsStyles.articles}>
+          <div className={newsStyles.articles}>
             {articleData.map((obj) => (
               <Article
                 key={obj.node.frontmatter.index}
@@ -86,8 +87,8 @@ const News = (props) => {
                 thumbnail={obj.node.frontmatter.thumbnail}
                 index={obj.node.frontmatter.index}
               />
-            ))} */}
-          {/* </div> */}
+            ))}
+          </div>
         </div>
       </div>
     </Layout>

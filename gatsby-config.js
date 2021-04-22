@@ -30,6 +30,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "uploads",
@@ -51,7 +58,6 @@ module.exports = {
         path: `${__dirname}/src/images/news`,
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -59,19 +65,11 @@ module.exports = {
         path: `${__dirname}/src/images/projects`,
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "student-images",
         path: `${__dirname}/src/images/students`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -103,7 +101,6 @@ module.exports = {
         ],
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -112,14 +109,14 @@ module.exports = {
       },
       __key: "images",
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "pages",
-    //     path: "./src/pages/",
-    //   },
-    //   __key: "pages",
-    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
+    },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
