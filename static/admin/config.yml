@@ -7,6 +7,7 @@ local_backend: true
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
+
 # This line should *not* be indented
 media_folder: static/img # Media files will be stored in the repo under
 public_folder: /img

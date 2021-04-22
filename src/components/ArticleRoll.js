@@ -3,12 +3,6 @@ import { Link } from "gatsby"
 import Img from "gatsby-image";
 import articleStyles from "../styles/components/article.module.scss";
 
-// function renderImage(file) {
-//   return (
-//     <Img fluid={file.node.childImageSharp.fluid} />
-//   )
-// }
-
 const ArticleRoll = ({key, slug, title, date, category, excerpt, fixed}) => {
   
   return (
@@ -29,7 +23,6 @@ const ArticleRoll = ({key, slug, title, date, category, excerpt, fixed}) => {
         </div>
       </Link>
     </div>
-    
   );
 };
 
