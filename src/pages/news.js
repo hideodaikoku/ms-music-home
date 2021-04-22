@@ -85,10 +85,11 @@ const News = (props) => {
               <ArticleRoll
                 key={obj.node.frontmatter.index}
                 title={obj.node.frontmatter.title}
+                slug={obj.node.fields.slug}
                 date={obj.node.frontmatter.date}
-                desc={obj.node.frontmatter.excerpt}
+                category={obj.node.frontmatter.category}
+                excerpt={obj.node.frontmatter.excerpt}
                 fixed={obj.node.frontmatter.thumbnail.childImageSharp.fixed}
-                index={obj.node.frontmatter.index}
               />
             ))}
           </div>
