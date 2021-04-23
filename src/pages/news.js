@@ -56,6 +56,9 @@ const News = (props) => {
   // // const articleData = newsData.slice(0).reverse();
   const articleData = data.posts.edges;
   // // console.log(articleData);
+
+  //date format for the featured article
+  const dateOnly = articleData[0].node.frontmatter.date.split('T')[0];
   return (
     <Layout>
       {/* uncomment the following for implementing news */}
@@ -64,8 +67,12 @@ const News = (props) => {
           <h2 className={newsStyles.titleLarge}>News</h2>
           <div className={newsStyles.imageContainer} onClick>
             <a href="https://sites.google.com/keio.jp/ms-music-news">
-            <Img
+            {/* <Img
               fluid={data.tempnews.childImageSharp.fluid}
+              className={newsStyles.image}
+            /> */}
+            <Img
+              fixed={articleData[0].node.frontmatter.thumbnail.childImageSharp.fixed}
               className={newsStyles.image}
             />
             </a>
@@ -77,7 +84,7 @@ const News = (props) => {
               <strong className={newsStyles.latest}> {articleData[0].node.frontmatter.title} </strong>
               
             </h2>
-            <small className={newsStyles.date}>{articleData[0].node.frontmatter.date}</small>
+            <small className={newsStyles.date}>{dateOnly}</small>
             <div className={newsStyles.desc}>{articleData[0].node.excerpt}</div>
           </div>
           <div className={newsStyles.articles}>
