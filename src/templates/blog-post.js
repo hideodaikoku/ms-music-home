@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../layout/layout"
 import Img from "gatsby-image"
-
+import quarantineBlogStyle from "../styles/quarantineblog.module.scss";
 
 // import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
