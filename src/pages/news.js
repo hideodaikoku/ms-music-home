@@ -36,8 +36,8 @@ const News = (props) => {
               category
               thumbnail {
                 childImageSharp {
-                  fixed(width: 200) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 200) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
@@ -72,7 +72,7 @@ const News = (props) => {
               className={newsStyles.image}
             /> */}
             <Img
-              fixed={articleData[0].node.frontmatter.thumbnail.childImageSharp.fixed}
+              fluid={articleData[0].node.frontmatter.thumbnail.childImageSharp.fluid}
               className={newsStyles.image}
             />
             </a>
@@ -96,7 +96,7 @@ const News = (props) => {
                 date={obj.node.frontmatter.date}
                 category={obj.node.frontmatter.category}
                 excerpt={obj.node.excerpt}
-                fixed={obj.node.frontmatter.thumbnail.childImageSharp.fixed}
+                fluid={obj.node.frontmatter.thumbnail.childImageSharp.fluid}
               />
             ))}
           </div>

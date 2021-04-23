@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image";
 import articleStyles from "../styles/components/article.module.scss";
 
-const ArticleRoll = ({key, slug, title, date, category, excerpt, fixed}) => {
+const ArticleRoll = ({key, slug, title, date, category, excerpt, fluid}) => {
   
   // date format
 
@@ -13,10 +13,10 @@ const ArticleRoll = ({key, slug, title, date, category, excerpt, fixed}) => {
         <div className={articleStyles.article}>
           <Link to={slug} > 
             <div className={articleStyles.articleImage}>
-              <Img
-                fixed={fixed}
-                className={articleStyles.image}
-              />
+                <Img
+                  fluid={fluid}
+                  className={articleStyles.image}
+                />
             </div>
           </Link>
           <div className={articleStyles.articleText}>
