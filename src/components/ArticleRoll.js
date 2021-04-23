@@ -5,6 +5,10 @@ import articleStyles from "../styles/components/article.module.scss";
 
 const ArticleRoll = ({key, slug, title, date, category, excerpt, fixed}) => {
   
+  // date format
+
+  const dateOnly = date.split('T')[0];
+  console.log(excerpt)
   return (
     <div key={key}>
       <Link to={slug} >
@@ -17,7 +21,7 @@ const ArticleRoll = ({key, slug, title, date, category, excerpt, fixed}) => {
           </div>
           <div className={articleStyles.articleText}>
             <h1 className={articleStyles.articleTitle}>{title}</h1>
-            <p className={articleStyles.articleDate}>{date}</p>
+            <p className={articleStyles.articleDate}>{dateOnly}</p>
             <p className={articleStyles.articleDescription}>{excerpt}</p>
           </div>
         </div>

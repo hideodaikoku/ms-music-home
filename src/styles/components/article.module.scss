@@ -1,45 +1,45 @@
 @import "../../styles/typography.css";
-.article{
+.article {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  justify-content: center;
+  margin: 1rem;
+  .article-image {
+    cursor: pointer;
+    .image {
+      width: 16rem;
+      height: 16rem;
+      object-fit: contain;
+    }
+  }
+  .article-text {
     display: flex;
     flex-direction: column;
-    min-width: 50%;
-    justify-content: center;
-    margin-bottom: 2rem;
-    .article-image{    
-        cursor: pointer;
-        .image{
-            width: 16rem;
-            height: 16rem;
-            object-fit: contain;
-        }
+    margin-top: 1rem;
+    .article-title {
+      font-family: "YuGothic";
+      font-weight: 500;
     }
-    .article-text{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-        .article-title{
-            font-family: 'YuGothic';
-            font-weight: 500;
-        }
-        .article-date{
-            font-weight: 100;
-        }
-        .article-description{
-            max-width: 12rem;
-        }
+    .article-date {
+      font-weight: 100;
     }
+    .article-description {
+      max-width: 12rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 842px) {
-    .article{
-        flex-direction: row;
-        justify-content: left;
-        height: 18rem;
-        .article-image{
-            margin-right: 1rem;
-        }
-        .article-text{
-            margin-top: 0;
-        }
+  .article {
+    flex-direction: row;
+    justify-content: left;
+    height: 18rem;
+    .article-image {
+      margin-right: 1rem;
     }
+    .article-text {
+      margin-top: 0;
+    }
+  }
 }

@@ -45,7 +45,7 @@ const News = (props) => {
             fields {
               slug
             }
-            excerpt
+            excerpt (pruneLength: 50)
           }
         }
       }
@@ -88,7 +88,7 @@ const News = (props) => {
                 slug={obj.node.fields.slug}
                 date={obj.node.frontmatter.date}
                 category={obj.node.frontmatter.category}
-                excerpt={obj.node.frontmatter.excerpt}
+                excerpt={obj.node.excerpt}
                 fixed={obj.node.frontmatter.thumbnail.childImageSharp.fixed}
               />
             ))}

@@ -8,11 +8,8 @@ ogp: "https://miro.medium.com/max/1400/1*TZiM_q0t8F72JoAfu-07gQ.jpeg"
 date: "2020/06/16"
 title: "‘Save a life, sit on your sofa.’ Coronavirus and the evolution of ‘home’."
 thumbnail: /img/pineapple.png
-
 excerpt: "Many businesses implemented a ‘work from home’ policy, weeks before government enforced a lockdown. This came after a wave of coronavirus cases were brought into London by holiday makers returning from Northern Italy. "
 ---
-
-# ‘Save a life, sit on your sofa.’ Coronavirus and the evolution of ‘home’.
 
 <div style="display:flex; justify-content: center">
 <img class="s t u gp ai" src="https://miro.medium.com/max/848/1*wLm59le_EtEWGgB8fUfFVA.jpeg"/>
@@ -53,14 +50,3 @@ Further more many citizens have struggled to access adequate green space which a
 Ultimately as our social practices reconfigure, our spacial practices need to follow suit. COVID-19 has highlighted the importance, now more than ever, of mixed-use planning. Mixed-use planning incorporates multiple uses into an urban environment, Tokyo for example is often described as a ‘city of villages’ (Echanove, E and Srivastava, R, 2013) with mixed-use houses that have businesses or workshops on the ground floor and the family home upstairs. Whole neighbourhoods are designed with green spaces, places to eat, schools and healthcare all in the vicinity of residents homes.
 
 Even in a post COVID world London will still face the same crucial challenges such as; poor mental health, air pollution and the rising cost of living. Londoners can no longer afford to travel great distances to find green space, spend a disproportionate amount of their wages on transport and rent or continue with the current air pollution levels. Redesigning our lives to geographically evolve around our homes will build stronger community bonds and create more vibrant places to live with an even spread of all the city has to offer. Ultimately even if working from home isn’t a possibility, working close to home should be.
-
----
-
-<div style="display: flex; margin-bottom: 2rem">
-    <div style="margin: 0 auto; text-align: center">
-        <img style="width:100%" alt="Helen Tartaglia" src="https://miro.medium.com/fit/c/96/96/1*dnc9lexrLm_P_-Q5hCnlYw.jpeg"><br/>
-        <a href="https://medium.com/@helentartaglia1?source=post_page-----372b1e9a6cea----------------------">Helen Tartaglia</a>
-    </div>
-</div>
-
----
