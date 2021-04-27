@@ -1,18 +1,18 @@
 @use '../index' as *;
 @import "../../styles/typography.css";
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $white;
+  .content {
+    margin: 0;
+    padding: 0rem;
+    flex-grow: 1;
+  }
+  .footer-container {
     background-color: $white;
-    .content {
-        margin: 0;
-        padding: 0rem;
-        flex-grow: 1;
-      }
-      .footer-container {
-        background-color: $white;
-        padding: 1rem;
-        color: $black;
-      }
+    padding: 1rem;
+    color: $black;
+  }
 }
