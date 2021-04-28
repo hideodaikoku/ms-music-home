@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import landingStyles from "../styles/layout/landing.module.scss";
 import newsStyles from "../styles/components/news.module.scss";
 
-const NewsComponent = () => {
+const NewsComponent = ({key, slug, title, date, category, excerpt, fluid}) => {
 
   return (
     <div className={landingStyles.container+" "+newsStyles.background}>
