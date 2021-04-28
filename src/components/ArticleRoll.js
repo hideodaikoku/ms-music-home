@@ -5,7 +5,6 @@ import articleStyles from "../styles/components/article.module.scss";
 
 const ArticleRoll = ({key, slug, title, date, category, excerpt, fluid}) => {
   
-  // date format
 
   const dateOnly = date.split('T')[0];
   return (

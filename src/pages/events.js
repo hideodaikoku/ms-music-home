@@ -8,6 +8,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import eventStyles from "../styles/pages/events.module.scss";
 import eventsData from "../data/events.json";
+import EventComponent from "../components/event.js";
 
 const Events = (props) => {
   // uncomment the following for implementing events  
@@ -36,26 +37,14 @@ const Events = (props) => {
         <div className={eventStyles.topSection}>
           <h2 className={eventStyles.titleLarge}>Events</h2>
           <div className={eventStyles.imageContainer}>
-          <a href="https://sites.google.com/keio.jp/ms-music-news">
-            <Img
-              fluid={data.tempevent.childImageSharp.fluid}
-              className={eventStyles.image}
-            />
-            </a>
-            <small className={eventStyles.copyright}>
-              &copy; Hazuki Ota, 2021
-            </small>
             <h2 className={eventStyles.titleText}>
-              {/* <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span> */}
-              {/* <strong className={eventStyles.latest}>イベント: </strong> */}
-              {/* {articleData[0].title} */}
             </h2>
-            {/* <small className={eventStyles.date}>{articleData[0].date}</small> */}
-            {/* <div className={eventStyles.desc}>{articleData[0].desc}</div> */}
+            <small className={eventStyles.date}>{articleData[0].date}</small>
+            <div className={eventStyles.desc}>{articleData[0].desc}</div>
           </div>
-          {/* <div className={eventStyles.articles}>
+          <div className={eventStyles.articles}>
             {articleData.map((obj) => (
-              <Article
+              <EventComponent
                 key={obj.index}
                 title={obj.title}
                 date={obj.date}
@@ -63,7 +52,7 @@ const Events = (props) => {
                 index={obj.index}
               />
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </Layout>

@@ -1,6 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+// const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 // called whenever new node is created.
 exports.onCreateNode = ({ node, getNode, actions }) => {
