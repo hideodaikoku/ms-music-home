@@ -7,14 +7,22 @@ const EventComponent = ({index, title, date, desc}) => {
     
   return (
     <div key={index} className={eventStyles.background}>
-      <div className={eventStyles.title}>
-          {title}
-      </div>
-      <div className={eventStyles.date}>
-        {date}
-      </div>
-      <div className={eventStyles.desc}>
-        {desc}
+      <div className={eventStyles.ticket}>
+        <div className={eventStyles.title}>
+            {title}
+        </div>
+          <div className={eventStyles.desc}>
+            <div className={eventStyles.subtitle}>About</div>
+              {desc}
+          </div>
+        
+          <div className={eventStyles.date}>
+            <div className={eventStyles.subtitle}>Date</div>
+              {date}
+          </div>
+        <div className={eventStyles.detail}>
+          詳細
+        </div>
       </div>
       {/* <h2 className={landingStyles.titleLargeBlue}>Event</h2>
       <Link to="/events" className={landingStyles.link}>
