@@ -38,7 +38,7 @@ const News = (props) => {
               category
               thumbnail {
                 childImageSharp {
-                  fluid(maxWidth: 200) {
+                  fluid(maxWidth: 800) {
                     ...GatsbyImageSharpFluid
                   }
                 }
