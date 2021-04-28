@@ -68,21 +68,12 @@ const News = (props) => {
         <div className={newsStyles.topSection}>
           <h2 className={newsStyles.titleLarge}>News</h2>
           <div className={newsStyles.imageContainer} onClick>
-            {/* <a href="https://sites.google.com/keio.jp/ms-music-news"> */}
-            {/* <Img
-              fluid={data.tempnews.childImageSharp.fluid}
-              className={newsStyles.image}
-            /> */}
             <Link to={articleData[0].node.fields.slug} > 
               <Img
                 fluid={articleData[0].node.frontmatter.thumbnail.childImageSharp.fluid}
                 className={newsStyles.image}
               />
             </Link>
-            {/* </a> */}
-            <small className={newsStyles.copyright}>
-              &copy; Hazuki Ota, 2021
-            </small>
             <h2 className={newsStyles.titleText}>
               <span style={{backgroundColor:"red", padding:"0 .5rem"}}>New</span>
               <strong className={newsStyles.latest}> {articleData[0].node.frontmatter.title} </strong>
