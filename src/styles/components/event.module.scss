@@ -23,33 +23,39 @@
     line-height: 2vw;
   }
   .desc {
+    border: 1px solid;
     float: left;
     width: 50%;
+    height: 12vw;
     padding-right: 1vw;
     padding-bottom: 1vw;
     font-size: 1.5vw;
     line-height: 1.7vw;
   }
   .date {
-    float: left;
+    border: 1px solid;
     width: 20%;
+    height: 12vw;
+    float: left;
     padding-right: 1vw;
     padding-bottom: 1vw;
     font-size: 3vw;
     line-height: 3vw;
   }
-  .detail {
-    width: 30%;
+  .view {
+    width: 27%;
+    height: 12vw;
+    border: 1px solid;
     float: left;
     text-align: right;
-    padding-right: 3vw;
-    padding-top: 9vw;
+    padding-top: 7vw;
     padding-bottom: 1vw;
   }
   .button {
     text-align: center;
     display: inline;
     font-size: 2vw;
+    line-height: 2vw;
     font-weight: 900;
     padding: 0.5vw;
     color: white;

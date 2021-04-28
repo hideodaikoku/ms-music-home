@@ -20,7 +20,7 @@ const EventComponent = ({index, title, date, desc}) => {
             <div className={eventStyles.subtitle}>Date</div>
               {date}
           </div>
-        <div className={eventStyles.detail}>
+        <div className={eventStyles.view}>
           <div className={eventStyles.button}>VIEW ></div>
           
         </div>
