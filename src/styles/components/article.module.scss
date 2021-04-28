@@ -1,60 +1,77 @@
 @import "../../styles/typography.css";
 
-.article-container {
-  border: 2px solid;
-  // display: flex;
-  justify-content: left;
-  // flex-wrap: wrap;
-  // width: 70vw;
-  // flex-direction: column;
+.article {
+  // border: 1px blue solid;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  // justify-content: center;
+  // margin: 2rem;
+  flex-direction: column;
 
+  .article-image {
+    // cursor: pointer;
+    position: relative;
+    .image {
+      width: 100%;
+      height: 15rem;
+      // margin: 1rem;
+      // object-fit: contain;
+      // margin-left: auto;
+      // margin-right: auto;
+    }
+  }
+  .article-text {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    .article-title {
+      font-family: "YuGothic";
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+    .article-date {
+      font-weight: 100;
+    }
+    .article-description {
+      max-width: 15rem;
+    }
+  }
+}
+
+// Tablet
+@media only screen and (min-width: 800px) {
   .article {
-    border: 1px solid;
-    // display: flex;
+    max-width: 50%;
+    width: 50%;
+
     // flex-direction: row;
-    // min-width: 50%;
-    width: 15vw;
-    justify-content: left;
-    margin: 2rem;
+    // justify-content: left;
+    // height: 18rem;
     .article-image {
-      cursor: pointer;
-      .image {
-        width: 16rem;
-        height: 16rem;
-        object-fit: contain;
-      }
+      // margin-right: 1rem;
     }
     .article-text {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      .article-title {
-        font-family: "YuGothic";
-        font-weight: 500;
-      }
-      .article-date {
-        font-weight: 100;
-      }
-      .article-description {
-        max-width: 12rem;
-      }
+      // margin-top: 0;
     }
   }
 }
 
 // PC
-@media only screen and (min-width: 842px) {
-  .article-container {
-    .article {
-      // flex-direction: row;
-      justify-content: left;
-      height: 18rem;
-      .article-image {
-        margin-right: 1rem;
-      }
-      .article-text {
-        margin-top: 0;
-      }
+@media only screen and (min-width: 1200px) {
+  .article {
+    max-width: 33%;
+    width: 33%;
+    // flex-direction: row;
+    // justify-content: left;
+    // height: 18rem;
+    .article-image {
+      // margin-right: 1rem;
+    }
+    .article-text {
+      // margin-top: 0;
     }
   }
 }

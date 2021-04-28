@@ -9,9 +9,7 @@ const ArticleRoll = ({key, slug, title, date, category, excerpt, fluid}) => {
 
   const dateOnly = date.split('T')[0];
   return (
-    <div key={key}>
-        <div className={articleStyles.articleContainer}>
-          <div className={articleStyles.article}>
+          <div key={key} className={articleStyles.article}>
             <Link to={slug} > 
               <div className={articleStyles.articleImage}>
                   <Img
@@ -21,13 +19,11 @@ const ArticleRoll = ({key, slug, title, date, category, excerpt, fluid}) => {
               </div>
             </Link>
             <div className={articleStyles.articleText}>
-              <h1 className={articleStyles.articleTitle}>{title}</h1>
-              <p className={articleStyles.articleDate}>{dateOnly}</p>
-              <p className={articleStyles.articleDescription}>{excerpt}</p>
+              <span className={articleStyles.articleTitle}>{title}</span>
+              <small className={articleStyles.articleDate}>{dateOnly}</small>
+              <span className={articleStyles.articleDescription}>{excerpt}</span>
             </div>
           </div>
-        </div>
-    </div>
   );
 };
 

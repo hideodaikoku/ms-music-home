@@ -27,7 +27,9 @@ const News = (props) => {
           }
         }
       }
-      posts: allMarkdownRemark{
+      posts: allMarkdownRemark (
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
         edges{
           node{
             frontmatter{
