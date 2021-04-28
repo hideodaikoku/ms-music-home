@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 // uncomment the following for implementing news
 import ArticleRoll from "../components/ArticleRoll";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link} from "gatsby";
 import Img from "gatsby-image";
 import newsStyles from "../styles/pages/news.module.scss";
 
@@ -68,16 +68,18 @@ const News = (props) => {
         <div className={newsStyles.topSection}>
           <h2 className={newsStyles.titleLarge}>News</h2>
           <div className={newsStyles.imageContainer} onClick>
-            <a href="https://sites.google.com/keio.jp/ms-music-news">
+            {/* <a href="https://sites.google.com/keio.jp/ms-music-news"> */}
             {/* <Img
               fluid={data.tempnews.childImageSharp.fluid}
               className={newsStyles.image}
             /> */}
-            <Img
-              fluid={articleData[0].node.frontmatter.thumbnail.childImageSharp.fluid}
-              className={newsStyles.image}
-            />
-            </a>
+            <Link to={articleData[0].node.fields.slug} > 
+              <Img
+                fluid={articleData[0].node.frontmatter.thumbnail.childImageSharp.fluid}
+                className={newsStyles.image}
+              />
+            </Link>
+            {/* </a> */}
             <small className={newsStyles.copyright}>
               &copy; Hazuki Ota, 2021
             </small>
