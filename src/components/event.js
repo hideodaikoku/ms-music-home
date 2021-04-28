@@ -21,7 +21,8 @@ const EventComponent = ({index, title, date, desc}) => {
               {date}
           </div>
         <div className={eventStyles.detail}>
-          詳細
+          <div className={eventStyles.button}>VIEW ></div>
+          
         </div>
       </div>
       {/* <h2 className={landingStyles.titleLargeBlue}>Event</h2>
