@@ -23,7 +23,7 @@
     line-height: 2vw;
   }
   .desc {
-    border: 1px solid;
+    // border: 1px solid;
     float: left;
     width: 50%;
     height: 12vw;
@@ -33,7 +33,7 @@
     line-height: 1.7vw;
   }
   .date {
-    border: 1px solid;
+    // border: 1px solid;
     width: 20%;
     height: 12vw;
     float: left;
@@ -42,18 +42,18 @@
     font-size: 3vw;
     line-height: 3vw;
   }
-  .view {
+  .viewlayout {
+    border: 1px solid;
     width: 27%;
     height: 12vw;
-    border: 1px solid;
     float: left;
-    text-align: right;
     padding-top: 7vw;
     padding-bottom: 1vw;
   }
-  .button {
+  .viewbutton {
+    float: right;
+    width: 7vw;
     text-align: center;
-    display: inline;
     font-size: 2vw;
     line-height: 2vw;
     font-weight: 900;

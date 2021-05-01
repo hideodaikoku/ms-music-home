@@ -20,8 +20,8 @@ const EventComponent = ({index, title, date, desc}) => {
             <div className={eventStyles.subtitle}>Date</div>
               {date}
           </div>
-        <div className={eventStyles.view}>
-          <div className={eventStyles.button}>VIEW ></div>
+        <div className={eventStyles.viewlayout}>
+          <div id="viewbutton" className={eventStyles.viewbutton}>VIEW</div>
           
         </div>
       </div>
