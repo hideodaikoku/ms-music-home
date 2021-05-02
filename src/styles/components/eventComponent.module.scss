@@ -1,0 +1,79 @@
+@import "../../styles/typography.css";
+
+.background {
+  background-image: url("../../images/ticket.png");
+  background-size: 100% 100%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 33vw;
+  width: 100vw;
+}
+
+.ticket {
+  font-family: "futura-pt", sans-serif;
+
+  padding-top: 3vw;
+  padding-left: 8vw;
+  .title {
+    font-size: 3vw;
+    min-height: 16vw;
+  }
+  .subtitle {
+    font-size: 2vw;
+    color: #015c99;
+    line-height: 2vw;
+  }
+  .desc {
+    // border: 1px solid;
+    float: left;
+    width: 50%;
+    height: 12vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+    // overflow-wrap: break-word;
+  }
+  .date {
+    // border: 1px solid;
+    width: 22.5%;
+    height: 12vw;
+    float: left;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  .viewlayout {
+    // border: 1px solid;
+    width: 26.3%;
+    height: 12vw;
+    float: left;
+    padding-top: 8.5vw;
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+    align-items: center;
+    text-decoration: none;
+  }
+  .viewbutton {
+    // float: center;
+    margin: 0 auto;
+    text-align: right;
+    width: 20vw;
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 500;
+    padding: 0.5vw;
+    color: #015c99;
+    // border-radius: 1vw;
+    // color: white;
+    // background-color: #015c99;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

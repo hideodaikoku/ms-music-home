@@ -29,6 +29,7 @@ const News = (props) => {
       }
       posts: allMarkdownRemark (
         sort: { order: DESC, fields: [frontmatter___date] }
+        filter: {frontmatter: {category: {eq: "news"}}}
       ) {
         edges{
           node{
