@@ -3,26 +3,28 @@ import { Link } from "gatsby"
 // import landingStyles from "../styles/layout/landing.module.scss";
 import eventStyles from "../styles/components/event.module.scss";
 
-const EventComponent = ({index, title, date, desc}) => {
+const EventComponent = ({key, slug, title, date, category, excerpt, fluid}) => {
     
+  const dateOnly = date.split('T')[0];
+
   return (
-    <div key={index} className={eventStyles.background}>
+    <div key={key} className={eventStyles.background}>
       <div className={eventStyles.ticket}>
         <div className={eventStyles.title}>
             {title}
         </div>
           <div className={eventStyles.desc}>
             <div className={eventStyles.subtitle}>About</div>
-              {desc}
+              {excerpt}
           </div>
-        
           <div className={eventStyles.date}>
             <div className={eventStyles.subtitle}>Date</div>
-              {date}
+              {dateOnly}
           </div>
         <div className={eventStyles.viewlayout}>
-          <div id="viewbutton" className={eventStyles.viewbutton}>VIEW</div>
-          
+         <Link to={slug} >
+            <div id="viewbutton" className={eventStyles.viewbutton}>VIEW》</div>
+          </Link>
         </div>
       </div>
       {/* <h2 className={landingStyles.titleLargeBlue}>Event</h2>

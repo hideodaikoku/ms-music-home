@@ -6,7 +6,7 @@ import ArticleRoll from "../components/ArticleRoll";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import eventStyles from "../styles/pages/events.module.scss";
-import eventsData from "../data/events.json";
+// import eventsData from "../data/events.json";
 import EventComponent from "../components/event.js";
 
 const Events = (props) => {
@@ -20,6 +20,13 @@ const Events = (props) => {
           }
         }
       }
+      event_arrow: file(relativePath: { eq: "event_arrow.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       tempevent: file(relativePath: { eq: "event.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
@@ -27,21 +34,49 @@ const Events = (props) => {
           }
         }
       }
+      events: allMarkdownRemark (
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: {frontmatter: {category: {eq: "event"}}}
+      ) {
+        edges{
+          node{
+            frontmatter{
+              title
+              date
+              category
+              thumbnail {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            fields {
+              slug
+            }
+            excerpt (pruneLength: 50)
+          }
+        }
+      }
     }
   `);
-  const articleData = eventsData.slice(0).reverse();
+  const eventsData = data.events.edges;
   return (
     <Layout>
       <div className={eventStyles.container}>
         <div className={eventStyles.topSection}>
           <h2 className={eventStyles.titleLarge}>Events</h2>
             <div className={eventStyles.articles}>
-              {articleData.map((obj) => (
+              {eventsData.map((obj) => (
                 <EventComponent
-                  key={obj.index}
-                  title={obj.title}
-                  date={obj.date}
-                  desc={obj.desc}
+                  key={obj.node.frontmatter.index}
+                  title={obj.node.frontmatter.title}
+                  slug={obj.node.fields.slug}
+                  date={obj.node.frontmatter.date}
+                  category={obj.node.frontmatter.category}
+                  excerpt={obj.node.excerpt}
+                  fluid={obj.node.frontmatter.thumbnail.childImageSharp.fluid}
                 />
               ))}
             </div>
