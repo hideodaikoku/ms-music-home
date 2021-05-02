@@ -22,7 +22,7 @@ const EventComponent = ({key, slug, title, date, category, excerpt, fluid}) => {
               {dateOnly}
           </div>
         <div className={eventStyles.viewlayout}>
-         <Link to={slug} >
+         <Link to={slug} style={{ textDecoration: 'none' }}>
             <div id="viewbutton" className={eventStyles.viewbutton}>VIEW》</div>
           </Link>
         </div>

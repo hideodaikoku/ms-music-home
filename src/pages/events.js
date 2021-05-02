@@ -55,7 +55,7 @@ const Events = (props) => {
             fields {
               slug
             }
-            excerpt (pruneLength: 50)
+            excerpt (pruneLength: 400)
           }
         }
       }
