@@ -31,7 +31,7 @@ const BlogPost = (props) => {
     <Layout color={"white"}>
       <div className={quarantineBlogStyle.container}>
         <div className={quarantineBlogStyle.backButton}>
-          <Link to="/news">
+          <Link to="/event">
             <span className={quarantineBlogStyle.backArr}>&larr;</span> ニューストップへ
           </Link>
         </div>

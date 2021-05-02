@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import eventStyles from "../styles/pages/events.module.scss";
 // import eventsData from "../data/events.json";
-import EventComponent from "../components/event.js";
+import EventComponent from "../components/eventComponent.js";
 
 const Events = (props) => {
   // uncomment the following for implementing events  

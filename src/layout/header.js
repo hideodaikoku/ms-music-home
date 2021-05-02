@@ -57,7 +57,7 @@ const Header = (props) => {
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/events"
+              to="/event"
             >
               イベント
             </Link>

@@ -12,6 +12,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        category
         thumbnail{
           childImageSharp {
             fixed(width: 300) {
@@ -26,13 +27,21 @@ export const query = graphql`
 const BlogPost = (props) => {
   const slug = props.data.markdownRemark.frontmatter.slug;
   const title = props.data.markdownRemark.frontmatter.title;
+  const link = "/" + props.data.markdownRemark.frontmatter.category;
+  let topPageBackLink = ""
+  if (props.data.markdownRemark.frontmatter.category === "news"){
+    topPageBackLink = "ニュース トップへ"
+  }
+  else if (props.data.markdownRemark.frontmatter.category === "event"){
+    topPageBackLink = "イベント トップへ"
+  }
 
   return (
     <Layout color={"white"}>
       <div className={quarantineBlogStyle.container}>
         <div className={quarantineBlogStyle.backButton}>
-          <Link to="/news">
-            <span className={quarantineBlogStyle.backArr}>&larr;</span> ニューストップへ
+          <Link to={link}>
+            <span className={quarantineBlogStyle.backArr}>&larr;</span> {topPageBackLink}
           </Link>
         </div>
         <h1>{title}</h1>

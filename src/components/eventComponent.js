@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby"
 // import landingStyles from "../styles/layout/landing.module.scss";
-import eventStyles from "../styles/components/event.module.scss";
+import eventStyles from "../styles/components/eventComponent.module.scss";
 
 const EventComponent = ({key, slug, title, date, category, excerpt, fluid}) => {
     
@@ -28,7 +28,7 @@ const EventComponent = ({key, slug, title, date, category, excerpt, fluid}) => {
         </div>
       </div>
       {/* <h2 className={landingStyles.titleLargeBlue}>Event</h2>
-      <Link to="/events" className={landingStyles.link}>
+      <Link to="/event" className={landingStyles.link}>
         [ READ MORE
         <svg
           width="63"

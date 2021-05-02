@@ -38,7 +38,7 @@ const Footer = () => {
             <Link
               className={footerStyles.link}
               activeClassName={footerStyles.activeNavItem}
-              to="/events"
+              to="/event"
             >
               イベント
             </Link>
