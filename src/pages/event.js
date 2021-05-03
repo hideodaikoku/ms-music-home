@@ -62,7 +62,7 @@ const Events = (props) => {
     }
   `);
   const eventsData = data.events.edges;
-  console.log("LOGGING EVENTSDATA", eventsData)
+  console.log("LOGGING EVENTSDATA", eventsData.node.frontmatter.date)
   return (
     <Layout>
       <div className={eventStyles.container}>
