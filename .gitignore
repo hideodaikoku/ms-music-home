@@ -9,7 +9,7 @@ src/.DS_Store
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-src/pages/blog
+# src/pages/blog
 
 # Local History for Visual Studio Code
 .history/

@@ -17,7 +17,12 @@
   padding-left: 8vw;
   .title {
     font-size: 3vw;
+    line-height: 3vw;
     min-height: 16vw;
+    width: 70%;
+    height: 10vw;
+    overflow-wrap: break-word;
+    // border: black 1px solid;
   }
   .subtitle {
     font-size: 2vw;
@@ -33,7 +38,8 @@
     padding-bottom: 1vw;
     font-size: 1.5vw;
     line-height: 1.7vw;
-    // overflow-wrap: break-word;
+    height: 10vw;
+    overflow-wrap: break-word;
   }
   .date {
     // border: 1px solid;
