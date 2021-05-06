@@ -5,7 +5,13 @@ import articleStyles from "../styles/components/article.module.scss";
 
 const ArticleRoll = ({key, slug, title, date, category, excerpt, fluid}) => {
   
-  const dateOnly = date.split('T')[0];
+  //date format for the featured article
+  if (date){
+    date = date.split('T')[0];
+  }
+  else {
+    date = "";
+  }
   
   return (
           <div key={key} className={articleStyles.article}>
@@ -19,7 +25,7 @@ const ArticleRoll = ({key, slug, title, date, category, excerpt, fluid}) => {
             </Link>
             <div className={articleStyles.articleText}>
               <span className={articleStyles.articleTitle}>{title}</span>
-              <small className={articleStyles.articleDate}>{dateOnly}</small>
+              <small className={articleStyles.articleDate}>{date}</small>
               <span className={articleStyles.articleDescription}>{excerpt}</span>
             </div>
           </div>

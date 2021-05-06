@@ -55,13 +55,14 @@ const Events = (props) => {
             fields {
               slug
             }
-            excerpt (pruneLength: 400)
+            excerpt (pruneLength: 200)
           }
         }
       }
     }
   `);
   const eventsData = data.events.edges;
+  
   return (
     <Layout>
       <div className={eventStyles.container}>

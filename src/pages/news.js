@@ -62,6 +62,7 @@ const News = (props) => {
 
   //date format for the featured article
   const dateOnly = articleData[0].node.frontmatter.date.split('T')[0];
+
   return (
     <Layout>
       {/* uncomment the following for implementing news */}

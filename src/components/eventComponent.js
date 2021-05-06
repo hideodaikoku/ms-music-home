@@ -5,7 +5,13 @@ import eventStyles from "../styles/components/eventComponent.module.scss";
 
 const EventComponent = ({key, slug, title, date, category, excerpt, fluid}) => {
     
-  const dateOnly = date.split('T')[0];
+  //date format for the featured article
+  if (date){
+    date = date.split('T')[0];
+  }
+  else {
+    date = "";
+  }
 
   return (
     <div key={key} className={eventStyles.background}>
@@ -19,7 +25,7 @@ const EventComponent = ({key, slug, title, date, category, excerpt, fluid}) => {
           </div>
           <div className={eventStyles.date}>
             <div className={eventStyles.subtitle}>Date</div>
-              {dateOnly}
+              {date}
           </div>
         <div className={eventStyles.viewlayout}>
          <Link to={slug} style={{ textDecoration: 'none' }}>
