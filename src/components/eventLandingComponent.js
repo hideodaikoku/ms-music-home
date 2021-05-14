@@ -3,7 +3,7 @@ import React from "react";
 import landingStyles from "../styles/layout/landing.module.scss";
 import eventLandingStyles from "../styles/components/eventLandingComponent.module.scss";
 
-const SurveyComponent = () => {
+const EventLandingComponent = () => {
   return (
     <div className={landingStyles.container+" "+eventLandingStyles.background}>
       <div className={landingStyles.textOverlay}>
@@ -29,4 +29,4 @@ const SurveyComponent = () => {
   );
 };
 
-export default SurveyComponent;
+export default EventLandingComponent;

@@ -1,4 +1,8 @@
 .background {
   background-image: url("../../images/ticket.png");
-  background-size: 100%;
+  background-size: 100% 70%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  // border: 4px solid green;
 }

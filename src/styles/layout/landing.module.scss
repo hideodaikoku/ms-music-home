@@ -9,6 +9,7 @@ $blue: #015c99;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  // border: 1px solid red;
   .text-overlay {
     margin: 10rem auto 10rem 0;
     padding-left: 3rem;
@@ -123,7 +124,7 @@ $blue: #015c99;
     .text-overlay {
       margin: 8rem auto 8rem 8rem;
       .title {
-        font-size: 5rem;
+        font-size: 5vw;
       }
       .subtext {
         max-width: 32rem;
