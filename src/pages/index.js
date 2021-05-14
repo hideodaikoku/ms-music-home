@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import TopComponent from "../components/top";
 import AboutComponent from "../components/about";
 import NewsComponent from "../components/news";
-import EventComponent from "../components/eventComponent";
+import EventLandingComponent from "../components/eventLandingComponent";
 import JoinUsComponent from "../components/joinus";
 import TeamComponent from "../components/team";
 import SurveyComponent from "../components/survey";
@@ -16,7 +16,7 @@ const IndexPage = () => {
       <TopComponent/>
       <AboutComponent/>
       <NewsComponent/>
-      <EventComponent/>
+      <EventLandingComponent/>
       <SurveyComponent/>
       <TeamComponent/>
       <JoinUsComponent/>
