@@ -2,7 +2,7 @@ node_modules/
 .cache/
 public
 .env
-src/.DS_Store
+.DS_Store
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
