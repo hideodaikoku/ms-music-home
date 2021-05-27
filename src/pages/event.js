@@ -10,16 +10,9 @@ import eventStyles from "../styles/pages/events.module.scss";
 import EventComponent from "../components/eventComponent.js";
 
 const Events = (props) => {
-  // uncomment the following for implementing events  
+  // uncomment the following for implementing events
   const data = useStaticQuery(graphql`
     query {
-      top: file(relativePath: { eq: "blue-texture.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       event_arrow: file(relativePath: { eq: "event_arrow.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
@@ -34,13 +27,13 @@ const Events = (props) => {
           }
         }
       }
-      events: allMarkdownRemark (
+      events: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: {frontmatter: {category: {eq: "event"}}}
+        filter: { frontmatter: { category: { eq: "event" } } }
       ) {
-        edges{
-          node{
-            frontmatter{
+        edges {
+          node {
+            frontmatter {
               title
               date
               category
@@ -55,32 +48,32 @@ const Events = (props) => {
             fields {
               slug
             }
-            excerpt (pruneLength: 200)
+            excerpt(pruneLength: 200)
           }
         }
       }
     }
   `);
   const eventsData = data.events.edges;
-  
+
   return (
     <Layout>
       <div className={eventStyles.container}>
         <div className={eventStyles.topSection}>
           <h2 className={eventStyles.titleLarge}>Events</h2>
-            <div className={eventStyles.articles}>
-              {eventsData.map((obj) => (
-                <EventComponent
-                  key={obj.node.frontmatter.index}
-                  title={obj.node.frontmatter.title}
-                  slug={obj.node.fields.slug}
-                  date={obj.node.frontmatter.date}
-                  category={obj.node.frontmatter.category}
-                  excerpt={obj.node.excerpt}
-                  fluid={obj.node.frontmatter.thumbnail.childImageSharp.fluid}
-                />
-              ))}
-            </div>
+          <div className={eventStyles.articles}>
+            {eventsData.map((obj) => (
+              <EventComponent
+                key={obj.node.frontmatter.index}
+                title={obj.node.frontmatter.title}
+                slug={obj.node.fields.slug}
+                date={obj.node.frontmatter.date}
+                category={obj.node.frontmatter.category}
+                excerpt={obj.node.excerpt}
+                fluid={obj.node.frontmatter.thumbnail.childImageSharp.fluid}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </Layout>

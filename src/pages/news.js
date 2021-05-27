@@ -12,13 +12,6 @@ const News = (props) => {
   // uncomment the following for implementing events
   const data = useStaticQuery(graphql`
     query {
-      top: file(relativePath: { eq: "blue-texture.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       tempnews: file(relativePath: { eq: "temporary-news-site.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {

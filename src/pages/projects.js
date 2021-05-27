@@ -26,7 +26,7 @@ const Projects = (props) => {
   // const articleData = projectData.slice(0).reverse();
   return (
     <Layout>
-      <ComingSoonComponent/>
+      <ComingSoonComponent />
       {/* 
       // uncomment the following for implementing events
       <div className={projectStyles.container}>
