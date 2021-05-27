@@ -2,9 +2,9 @@ import React from "react";
 import Layout from "../layout/layout";
 
 // uncomment the following for implementing events
-import ArticleRoll from "../components/ArticleRoll";
+// import ArticleRoll from "../components/ArticleRoll";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 import eventStyles from "../styles/pages/events.module.scss";
 // import eventsData from "../data/events.json";
 import EventComponent from "../components/eventComponent.js";

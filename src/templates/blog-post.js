@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import Layout from "../layout/layout"
-import Img from "gatsby-image"
-import quarantineBlogStyle from "../styles/template/quarantineblog.module.scss"
+import React from "react";
+import { graphql, Link } from "gatsby";
+import Layout from "../layout/layout";
+// import Img from "gatsby-image"
+import quarantineBlogStyle from "../styles/template/quarantineblog.module.scss";
 
 // import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
@@ -13,7 +13,7 @@ export const query = graphql`
       frontmatter {
         title
         category
-        thumbnail{
+        thumbnail {
           childImageSharp {
             fixed(width: 300) {
               ...GatsbyImageSharpFixed
@@ -23,17 +23,16 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 const BlogPost = (props) => {
-  const slug = props.data.markdownRemark.frontmatter.slug;
+  // const slug = props.data.markdownRemark.frontmatter.slug;
   const title = props.data.markdownRemark.frontmatter.title;
   const link = "/" + props.data.markdownRemark.frontmatter.category;
-  let topPageBackLink = ""
-  if (props.data.markdownRemark.frontmatter.category === "news"){
-    topPageBackLink = "ニュース トップへ"
-  }
-  else if (props.data.markdownRemark.frontmatter.category === "event"){
-    topPageBackLink = "イベント トップへ"
+  let topPageBackLink = "";
+  if (props.data.markdownRemark.frontmatter.category === "news") {
+    topPageBackLink = "ニュース トップへ";
+  } else if (props.data.markdownRemark.frontmatter.category === "event") {
+    topPageBackLink = "イベント トップへ";
   }
 
   return (
@@ -41,7 +40,8 @@ const BlogPost = (props) => {
       <div className={quarantineBlogStyle.container}>
         <div className={quarantineBlogStyle.backButton}>
           <Link to={link}>
-            <span className={quarantineBlogStyle.backArr}>&larr;</span> {topPageBackLink}
+            <span className={quarantineBlogStyle.backArr}>&larr;</span>{" "}
+            {topPageBackLink}
           </Link>
         </div>
         <h1>{title}</h1>
@@ -69,4 +69,3 @@ export default BlogPost;
 //       </Layout>
 //     )
 // }
-
