@@ -7,7 +7,6 @@ const TopComponent = () => {
     <div className={landingStyles.container}>
       <div className={landingStyles.textOverlay}>
         <h3 className={landingStyles.title}>MS音楽感動共創プロジェクト</h3>
-        <h3 className={landingStyles.titleLargeBlue}>MESSAGE</h3>
         <h4 className={landingStyles.subtext}>
           2050年の社会における音楽芸術はどのようなものでしょうか
         </h4>
