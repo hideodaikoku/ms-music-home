@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 import landingStyles from "../styles/layout/landing.module.scss";
 
 const JoinUsComponent = () => {
@@ -7,8 +7,10 @@ const JoinUsComponent = () => {
     <div className={landingStyles.container}>
       <div className={landingStyles.textOverlay}>
         <h3 className={landingStyles.titleLargeBlue}>Contact Us</h3>
-        <p className={landingStyles.desc}>私たちの取り組みについてのお問合せは、下記のリンクからお問い合わせください。</p>
-        <Link to="/join-us" className={landingStyles.link}>
+        <p className={landingStyles.desc}>
+          私たちの取り組みについてのお問合せは、下記のリンクからお問い合わせください。
+        </p>
+        <Link to="/contact" className={landingStyles.link}>
           [ READ MORE
           <svg
             width="63"

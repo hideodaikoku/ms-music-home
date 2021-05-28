@@ -8,8 +8,8 @@ import Student from "../components/student";
 import Member from "../components/member";
 
 const Team = () => {
-  const leaderData = studentData.filter((student)=>student.leader==="TRUE")
-  const memberData = studentData.filter((student)=>student.leader!=="TRUE")
+  const leaderData = studentData.filter((student) => student.leader === "TRUE");
+  const memberData = studentData.filter((student) => student.leader !== "TRUE");
   return (
     <Layout>
       <div className={teamStyles.container}>
@@ -28,12 +28,15 @@ const Team = () => {
               />
             ))}
           </div>
+          <div className={teamStyles.separator}> </div>
+          <h1 style={{ fontSize: "3rem", fontWeight: 500 }}>特別メンバー</h1>
 
-          <div className={teamStyles.separator}>{" "}</div>
-          <h1 style={{fontSize:"3rem",fontWeight:500}}>
-            学生協力者
-          </h1>
-          <p style={{color:"gray", fontWeight:500}}> 慶応義塾大学 学生有志・東京大学 学生有志</p>
+          <div className={teamStyles.separator}> </div>
+          <h1 style={{ fontSize: "3rem", fontWeight: 500 }}>学生協力者</h1>
+          <p style={{ color: "gray", fontWeight: 500 }}>
+            {" "}
+            慶応義塾大学 学生有志・東京大学 学生有志
+          </p>
           <div className={teamStyles.studentLeaders}>
             {leaderData.map((student, i) => (
               <Student
@@ -47,7 +50,6 @@ const Team = () => {
               />
             ))}
           </div>
-          <h2 style={{fontSize:"2rem",fontWeight:200}}>チームメンバー</h2>
           <div className={teamStyles.studentMembers}>
             {memberData.map((student, i) => (
               <Member

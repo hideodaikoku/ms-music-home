@@ -1,6 +1,6 @@
 import React from "react";
 import footerStyles from "../styles/layout/footer.module.scss";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
 const Footer = () => {
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
             <Link
               className={footerStyles.link}
               activeClassName={footerStyles.activeNavItem}
-              to="/projects"
+              to="/survey"
             >
               調査
             </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
             <Link
               className={footerStyles.link}
               activeClassName={footerStyles.activeNavItem}
-              to="/survey"
+              to="/participate"
             >
               アンケート参加
             </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
             <Link
               className={footerStyles.link}
               activeClassName={footerStyles.activeNavItem}
-              to="/join-us"
+              to="/contact"
             >
               お問い合わせ
             </Link>

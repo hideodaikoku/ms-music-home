@@ -5,7 +5,7 @@ import TopComponent from "../components/top";
 import AboutComponent from "../components/about";
 import NewsComponent from "../components/news";
 import EventLandingComponent from "../components/eventLandingComponent";
-import JoinUsComponent from "../components/joinus";
+import ContactComponent from "../components/contactComponent";
 import TeamComponent from "../components/team";
 import SurveyComponent from "../components/survey";
 
@@ -13,13 +13,13 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO />
-      <TopComponent/>
-      <AboutComponent/>
-      <NewsComponent/>
-      <EventLandingComponent/>
-      <SurveyComponent/>
-      <TeamComponent/>
-      <JoinUsComponent/>
+      <TopComponent />
+      <AboutComponent />
+      <NewsComponent />
+      <EventLandingComponent />
+      <SurveyComponent />
+      <TeamComponent />
+      <ContactComponent />
     </Layout>
   );
 };

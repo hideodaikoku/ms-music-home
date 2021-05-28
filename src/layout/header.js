@@ -66,7 +66,7 @@ const Header = (props) => {
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/projects"
+              to="/survey"
             >
               調査
             </Link>
@@ -84,7 +84,7 @@ const Header = (props) => {
             <Link
               className={headerStyles.link}
               activeClassName={headerStyles.activeNavItem}
-              to="/survey"
+              to="/participate"
             >
               アンケート参加
             </Link>
@@ -98,7 +98,7 @@ const Header = (props) => {
             <Link
               className={headerStyles.button}
               activeClassName={headerStyles.activeNavItem}
-              to="/join-us"
+              to="/contact"
             >
               お問い合わせ
             </Link>
