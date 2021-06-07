@@ -74,12 +74,8 @@ $blue: #015c99;
       font-size: 1rem;
       line-height: 2rem;
       margin-top: 20px;
-      width: 500;
-      height: 30;
       span {
         transition: 0.2s ease-in;
-        width: 500;
-        height: 30;
       }
       svg {
         margin-left: 1rem;
@@ -90,8 +86,6 @@ $blue: #015c99;
     .link:hover {
       span {
         font-size: 2rem;
-        width: 500;
-        height: 30;
       }
     }
 
@@ -99,8 +93,11 @@ $blue: #015c99;
       text-decoration: none;
       color: white;
       font-size: 1rem;
-      line-height: 1rem;
-      transition: 0.2s ease-in;
+      line-height: 2rem;
+      margin-top: 20px;
+      span {
+        transition: 0.2s ease-in;
+      }
       svg {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -108,9 +105,10 @@ $blue: #015c99;
         stroke: white;
       }
     }
-
     .link-white:hover {
-      font-size: 0.95rem;
+      span {
+        font-size: 2rem;
+      }
     }
 
     .image-container {
