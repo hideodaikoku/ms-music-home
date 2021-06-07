@@ -1,5 +1,5 @@
-$blue: #015c99;
 @import "../../styles/typography.css";
+$blue: #015c99;
 .container {
   // margin: 0 auto;
   padding: 0;
@@ -18,7 +18,7 @@ $blue: #015c99;
       font-family: "YuGothic", sans-serif;
       font-weight: 600;
       font-size: 3rem;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       padding-right: 3rem;
       color: $blue;
     }
@@ -39,13 +39,14 @@ $blue: #015c99;
       color: $blue;
     }
     .subtext {
-      font-family: sans-serif;
-      font-weight: 500;
-      font-size: 2rem;
+      font-family: "YuGothic", sans-serif;
+      font-weight: bold;
+      font-size: 2.5rem;
       max-width: 80vw;
-      padding-right: 3rem;
-      line-height: 3rem;
-      margin-bottom: 1.5rem;
+      margin: 0;
+      // padding-right: 3rem;
+      // line-height: 3rem;
+      margin-bottom: 15;
       color: black;
     }
 
@@ -58,27 +59,44 @@ $blue: #015c99;
       color: white;
     }
     .desc {
-      font-family: sans-serif;
+      font-family: "YuGothic", sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
       max-width: 80vw;
       font-weight: 500;
-      padding-right: 3rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: $blue;
     }
     .link {
       text-decoration: none;
       color: $blue;
-      font-size: 0.8rem;
+      font-size: 1rem;
       line-height: 1rem;
+      margin-top: 20px;
       transition: 0.2s ease-in;
+      width: 500;
+      height: 30;
+      // border: solid 1px;
+      span {
+        width: 500;
+        height: 30;
+        // border: solid red 1px;
+      }
       svg {
         margin-left: 1rem;
         margin-right: 1rem;
         height: 0.8rem;
       }
     }
+    .link:hover {
+      font-size: 0.95rem;
+    }
+
     .link-white {
       text-decoration: none;
       color: white;
-      font-size: 0.8rem;
+      font-size: 1rem;
       line-height: 1rem;
       transition: 0.2s ease-in;
       svg {
@@ -87,9 +105,6 @@ $blue: #015c99;
         height: 0.8rem;
         stroke: white;
       }
-    }
-    .link:hover {
-      font-size: 0.95rem;
     }
 
     .link-white:hover {
@@ -124,14 +139,14 @@ $blue: #015c99;
     .text-overlay {
       margin: 8rem auto 8rem 8rem;
       .title {
-        font-size: 5vw;
+        font-size: 5.5vw;
       }
       .subtext {
         width: 90vw;
         font-size: 2.7vw;
       }
       .desc {
-        max-width: 43rem;
+        // max-width: 43rem;
       }
     }
     .image-container {
