@@ -72,16 +72,14 @@ $blue: #015c99;
       text-decoration: none;
       color: $blue;
       font-size: 1rem;
-      line-height: 1rem;
+      line-height: 2rem;
       margin-top: 20px;
-      transition: 0.2s ease-in;
       width: 500;
       height: 30;
-      // border: solid 1px;
       span {
+        transition: 0.2s ease-in;
         width: 500;
         height: 30;
-        // border: solid red 1px;
       }
       svg {
         margin-left: 1rem;
@@ -90,7 +88,11 @@ $blue: #015c99;
       }
     }
     .link:hover {
-      font-size: 0.95rem;
+      span {
+        font-size: 2rem;
+        width: 500;
+        height: 30;
+      }
     }
 
     .link-white {
