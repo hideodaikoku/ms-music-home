@@ -11,9 +11,11 @@ const JoinUsComponent = () => {
         <p className={landingStyles.desc}>
           私たちの取り組みについてのお問合せは、下記のリンクからお問い合わせください。
         </p>
-        <Link to="/contact" className={landingStyles.link}>
-          <TopPageArrow stroke="#015C99" />
-        </Link>
+        <div className={landingStyles.link}>
+          <Link to="/contact">
+            <TopPageArrow stroke="#015C99" />
+          </Link>
+        </div>
       </div>
     </div>
   );
