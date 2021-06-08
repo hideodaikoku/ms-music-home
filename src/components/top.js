@@ -20,6 +20,15 @@ const TopComponent = () => {
             <TopPageArrow stroke="#015C99" />
           </Link>
         </div>
+
+        <div className={landingStyles.verticalLine}>
+          <h4 className={landingStyles.subtext}>
+            ムーンショット型研究開発制度とは
+          </h4>
+          <div className={landingStyles.desc}>
+            本プロジェクトは大胆な発想に基づく挑戦的な研究開発（ムーンショット）を推進する内閣府の制度、ムーンショット型研究開発制度の新たな目標検討のためのビジョン策定（ミレニア・プログラム）の目標検討チームです。
+          </div>
+        </div>
       </div>
     </div>
   );
