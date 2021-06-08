@@ -1,7 +1,8 @@
-@font-face {
+/* @font-face {
   font-family: "YuGothic";
   src: url("../fonts/yugothib.ttf");
-}
+} */
+/* 210608 this font was commented out because the file was not displaying medium and bold correctly for Japanese.*/
 @font-face {
   font-family: "futura-pt";
   src: url("../fonts/Futura-Medium-01.ttf");

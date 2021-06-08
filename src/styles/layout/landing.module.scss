@@ -1,9 +1,8 @@
-@import "../../styles/typography.css";
-
-$blue: #015c99;
 // * {
 //   border: 1px solid red;
 // }
+@import "../../styles/typography.css";
+$blue: #015c99;
 .container {
   // margin: 0 auto;
   padding: 0;
@@ -143,8 +142,26 @@ $blue: #015c99;
     }
 
     .verticalLine {
+      font-family: "YuGothic", sans-serif;
       border-left: thick solid #cccccc;
       margin: 1rem;
+      padding-left: 1rem;
+      .subtext {
+        font-weight: bold;
+        font-size: 1.5rem;
+        max-width: 80vw;
+        margin: 0;
+        margin-bottom: 15;
+        color: black;
+      }
+      .desc {
+        font-size: 1rem;
+        max-width: 80vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        color: black;
+      }
     }
   }
 }
