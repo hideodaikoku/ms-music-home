@@ -7,7 +7,7 @@ const Survey = () => {
     <Layout>
       <div className={surveyStyles.container}>
         <div className={surveyStyles.actionTitle}>
-          <h1 className={surveyStyles.action}>取り組み ACTIONS</h1>
+          <h1 className={surveyStyles.action}>ACTIONS</h1>
           <div className={surveyStyles.subtextJp}>
             <p>
               「音楽で人類を幸せにする」という目標に向かい、現在の科学と技術の状況を調査しその過程で「シンポジウム」「ワークショップ」を実施します。また、調査内容にもとづき、現時点で可能な技術かつ30年後の目標に近づく第一歩として体験型「トライアルワークショップ」を実施します。これらをもとに「音楽で人類を幸せにする」目標に向けたロードマップを策定します。
