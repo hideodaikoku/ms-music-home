@@ -6,46 +6,6 @@ $pink: #bb5098;
 $black: #2c2f33;
 
 .container {
-  .top-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90vw;
-    margin: 3rem auto 0 auto;
-    position: relative;
-    .vision {
-      text-transform: uppercase;
-      color: $black;
-      font-family: "futura-pt";
-      font-weight: 500;
-      text-align: center;
-      font-size: 5rem;
-    }
-    .overlay {
-      position: absolute;
-      top: 4rem;
-      left: 50%;
-      transform: translateX(-50%);
-      color: gray;
-      font-family: "futura-pt";
-      font-weight: 600;
-      margin: 0 auto;
-      width: 75vw;
-      overflow: hidden;
-      #top {
-        animation: slide-left 30s infinite linear;
-        white-space: nowrap;
-        display: inline;
-      }
-      #bottom {
-        top: 2rem;
-        animation: slide-delay 30s infinite linear;
-        white-space: nowrap;
-        overflow: hidden;
-        display: inline;
-      }
-    }
-  }
   .action-title {
     display: flex;
     flex-direction: column;
@@ -61,38 +21,38 @@ $black: #2c2f33;
       text-align: center;
       font-size: 5rem;
     }
-  }
-  .subtext-jp {
-    width: 90vw;
-    margin: 3rem auto;
-    padding: 0;
-    text-align: left;
-    p {
-      color: $blue;
-      font-weight: 600;
-      font-family: "YuGothic";
-      margin: 0;
-      line-height: 2rem;
-    }
-  }
-  .explanation {
-    width: 90vw;
-    margin: 0 auto;
-    padding-left: 0;
-    .paragraph {
-      color: $black;
-      // font-weight: 500;
-      // font-family: sans-serif;
-      font-family: "YuGothic";
-
-      font-weight: 100;
-      font-size: 1rem;
-      max-width: 56rem;
-      line-height: 2rem;
-      .span {
+    .subtext-jp {
+      width: 90vw;
+      margin: 3rem auto;
+      padding: 0;
+      text-align: left;
+      p {
         color: $blue;
-        font-weight: 800;
-        // font-size: 1.2rem;
+        font-weight: 600;
+        font-family: "YuGothic";
+        margin: 0;
+        line-height: 2rem;
+      }
+    }
+    .explanation {
+      width: 90vw;
+      margin: 0 auto;
+      padding-left: 0;
+      .paragraph {
+        color: $black;
+        // font-weight: 500;
+        // font-family: sans-serif;
+        font-family: "YuGothic";
+
+        font-weight: 100;
+        font-size: 1rem;
+        max-width: 56rem;
+        line-height: 2rem;
+        .span {
+          color: $blue;
+          font-weight: 800;
+          // font-size: 1.2rem;
+        }
       }
     }
   }
@@ -145,35 +105,19 @@ $black: #2c2f33;
 
 @media only screen and (min-width: 840px) {
   .container {
-    .top-title {
-      .vision {
-        text-transform: uppercase;
-        color: $black;
-        font-family: "futura-pt";
-        font-weight: 500;
-        text-align: center;
-        font-size: 12rem;
-        width: 80vw;
-        margin: 3rem auto;
-      }
-      .overlay {
-        top: 10rem;
-        width: 70vw;
-      }
-    }
     .action-title {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 78vw;
-      margin: 3rem auto 0 auto;
-      position: relative;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // width: 78vw;
+      // margin: 3rem auto 0 auto;
+      // position: relative;
       .action {
         text-transform: uppercase;
         color: $black;
         font-family: "futura-pt";
         font-weight: 300;
-        text-align: center;
+        // text-align: center;
         font-size: 5rem;
       }
       .subtext-jp {
@@ -194,7 +138,7 @@ $black: #2c2f33;
     }
 
     .explanation {
-      width: 60vw;
+      width: 55vw;
       margin: 0 auto;
       padding-left: 0;
       .paragraph {
