@@ -81,7 +81,7 @@ $black: #2c2f33;
     padding-left: 0;
     .paragraph {
       color: $black;
-      font-weight: 500;
+      // font-weight: 500;
       font-family: sans-serif;
       font-weight: 100;
       font-size: 0.9rem;
@@ -186,11 +186,12 @@ $black: #2c2f33;
       }
     }
     .explanation {
-      width: 48vw;
+      width: 60vw;
       margin: 0 auto;
       padding-left: 0;
       .paragraph {
         color: $black;
+        font-family: "YuGothic";
         font-weight: 500;
         font-size: 1rem;
         margin-bottom: 2rem;
