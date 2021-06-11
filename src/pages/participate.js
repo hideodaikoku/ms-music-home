@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../layout/layout";
 import ComingSoonComponent from "../components/coming-soon";
 import participateStyles from "../styles/pages/participate.module.scss";
+import { Link } from "gatsby";
 
 const Participate = (props) => {
   return (
@@ -33,9 +34,9 @@ const Participate = (props) => {
           <h2>■ アンケートフォーム</h2>
           <div className={participateStyles.paragraph}>
             <p>
-              <a href="https://keiogsmg.syd1.qualtrics.com/jfe/form/SV_6FPQIdv1C0G1pFs">
+              <Link to="https://keiogsmg.syd1.qualtrics.com/jfe/form/SV_6FPQIdv1C0G1pFs">
                 https://keiogsmg.syd1.qualtrics.com/jfe/form/SV_6FPQIdv1C0G1pFs
-              </a>
+              </Link>
             </p>
           </div>
           <h2>■ 回答期限</h2>
@@ -55,7 +56,7 @@ const Participate = (props) => {
           <div className={participateStyles.paragraph}>
             <p>
               MS目標検討「MS音楽感動共創」プロジェクトチーム
-              お問い合わせフォーム(https://ms-music.tokyo/contact)
+              <Link to="/contact">お問い合わせフォーム</Link>
               よりご連絡いただけますと幸いです。
             </p>
           </div>
