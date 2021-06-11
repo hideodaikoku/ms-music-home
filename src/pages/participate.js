@@ -41,7 +41,9 @@ const Participate = (props) => {
           </div>
           <h2>■ 回答期限</h2>
           <div className={participateStyles.paragraph}>
-            <p>2021年6月17日（木）23時59分　まで</p>
+            <p className={participateStyles.deadline}>
+              2021年6月17日（木）23時59分　まで
+            </p>
           </div>
           <h2>■ その他</h2>
           <div className={participateStyles.paragraph}>

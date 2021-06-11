@@ -34,25 +34,27 @@ $black: #2c2f33;
         line-height: 2rem;
       }
     }
-    .explanation {
-      width: 90vw;
-      margin: 0 auto;
-      padding-left: 0;
-      .paragraph {
-        color: $black;
-        // font-weight: 500;
-        // font-family: sans-serif;
-        font-family: "YuGothic";
-
-        font-weight: 100;
-        font-size: 1rem;
-        max-width: 56rem;
-        line-height: 2rem;
-        .span {
-          color: $blue;
-          font-weight: 800;
-          // font-size: 1.2rem;
-        }
+  }
+  .explanation {
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 0;
+    .paragraph {
+      color: $black;
+      // font-weight: 500;
+      // font-family: sans-serif;
+      font-family: "YuGothic";
+      font-weight: 100;
+      font-size: 1rem;
+      max-width: 56rem;
+      line-height: 2rem;
+      .span {
+        color: $blue;
+        font-weight: 800;
+        // font-size: 1.2rem;
+      }
+      .deadline {
+        color: red;
       }
     }
   }
